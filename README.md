@@ -100,7 +100,8 @@ Coming soon
 
 ## Terms of Service
 
-Coming soon
+(Term of Service)[./TOS.md]
+
 ---
 
 ## Documentation Repository
