@@ -96,11 +96,11 @@ https://altergolden.dev
 
 ## Privacy Policy
 
-(Privacy Policy)(PP.md)
+[Privacy Policy](PP.md)
 
 ## Terms of Service
 
-(Term of Service)[TOS.md]
+[Terms of Service](TOS.md)
 
 ---
 
