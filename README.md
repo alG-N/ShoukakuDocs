@@ -68,8 +68,6 @@ You can write about:
 - people or projects you want to acknowledge
 - how Shoukaku has changed since its first version
 
-A separate draft page is also available in [INSPIRATION.md](INSPIRATION.md), but the main inspiration text should be maintained here in the README.
-
 ## Availability and Changes
 
 Shoukaku is an actively developed service. Commands, integrations, limits, and availability may change as Discord, third-party APIs, and project requirements evolve.
