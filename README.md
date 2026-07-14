@@ -15,6 +15,14 @@ Shoukaku is a multi-purpose Discord bot focused on music, media tools, moderatio
 - [Terms of Service](TOS.md)
 - [FAQ](FAQ.md)
 
+## Inspiration
+
+It all started when I was a kid. I saw some lines of code and thought it looked incredibly tough—like something only a master hacker could do. I decided to enroll in a private school called FPT Polytechnic to learn some basic coding. As it turned out, I was able to improve my skills significantly there and made a lot of friends along the way. I also worked on several new projects.
+
+This project is by far my second biggest personal endeavor, after [FumoBOT](https://github.com/alG-N/FumoBOT), which is currently on hiatus with no confirmation on when I might rework it. This new project represents all the knowledge I've gained from school and my browsing around the internet. There may be some bugs, but I’m committed to fixing them!
+
+As for the name Shoukaku, I chose it because I played Kantai Collection (Kancolle) since middle school and became fascinated with naval history. I also love Japan, and I think she is perfect! :D
+
 ## What Shoukaku Does
 
 | Area | Highlights |
@@ -54,19 +62,6 @@ The public documentation must not contain credentials, private configuration, in
 Shoukaku is built primarily with TypeScript and Node.js. The hosted stack uses Discord.js, PostgreSQL, Redis, Lavalink, Docker, media-processing services, and optional observability tools.
 
 See [TECHNOLOGY.md](TECHNOLOGY.md) for a high-level breakdown. That document intentionally describes technologies without publishing sensitive deployment details.
-
-## Inspiration
-
-> This section is reserved for the project owner to complete.
-
-You can write about:
-
-- why the name **Shoukaku** was chosen
-- the original idea or personal goal behind the bot
-- bots, communities, games, characters, or projects that influenced it
-- the design principles Shoukaku should follow
-- people or projects you want to acknowledge
-- how Shoukaku has changed since its first version
 
 ## Availability and Changes
 
