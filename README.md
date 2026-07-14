@@ -35,7 +35,6 @@ Use `/help` in Discord for the latest command list. The public command overview 
 | [Command Reference](COMMANDS.md) | Public command categories and currently documented commands |
 | [Technology](TECHNOLOGY.md) | High-level tools, services, and architecture used by the project |
 | [FAQ](FAQ.md) | Common setup, usage, availability, privacy, and support questions |
-| [Inspiration](INSPIRATION.md) | Reserved for the project owner to describe the project's inspiration |
 | [Privacy Policy](PP.md) | Information the official hosted service may process and how it is handled |
 | [Terms of Service](TOS.md) | Rules and conditions for using the official hosted service |
 
@@ -58,9 +57,18 @@ See [TECHNOLOGY.md](TECHNOLOGY.md) for a high-level breakdown. That document int
 
 ## Inspiration
 
-The Inspiration section is intentionally left for the project owner to write.
+> This section is reserved for the project owner to complete.
 
-See [INSPIRATION.md](INSPIRATION.md).
+You can write about:
+
+- why the name **Shoukaku** was chosen
+- the original idea or personal goal behind the bot
+- bots, communities, games, characters, or projects that influenced it
+- the design principles Shoukaku should follow
+- people or projects you want to acknowledge
+- how Shoukaku has changed since its first version
+
+A separate draft page is also available in [INSPIRATION.md](INSPIRATION.md), but the main inspiration text should be maintained here in the README.
 
 ## Availability and Changes
 
