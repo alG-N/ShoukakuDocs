@@ -1,132 +1,90 @@
 # Shoukaku Bot
 
-A modern multi-purpose Discord bot focused on music, media, utility, moderation, and entertainment.
+Shoukaku is a multi-purpose Discord bot focused on music, media tools, moderation, utility commands, and entertainment.
 
-> This repository contains public documentation only.
-> The bot source code, infrastructure, deployment configuration, and backend services remain private.
+> **This repository is the public documentation hub for Shoukaku.**
+> The application source code, deployment configuration, credentials, and internal infrastructure are maintained separately.
 
----
+## Quick Links
 
-## Features
+- [Invite Shoukaku](https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=8&integration_type=0&scope=bot)
+- [Support Server](https://discord.gg/qGwKsqH62k)
+- [Service Status](https://altergolden.dev)
+- [Command Reference](COMMANDS.md)
+- [Privacy Policy](PP.md)
+- [Terms of Service](TOS.md)
+- [FAQ](FAQ.md)
 
-### Music
-- Queue management
-- Playback controls
-- Autoplay support
-- History tracking
-- Voice channel integration
+## What Shoukaku Does
 
-### Media
-- Video downloading
-- Media extraction from supported platforms
-- Content retrieval tools
+| Area | Highlights |
+|---|---|
+| Music | Playback, queues, history, autoplay, loop, shuffle, and voice-channel controls |
+| Media | Media lookup, supported-platform downloads, and embed assistance |
+| Moderation | Warnings, cases, mutes, kicks, bans, automoderation, anti-raid, and server protection |
+| Utility | AFK, avatar, role, user, and server information, reporting, and general tools |
+| Integrations | Anime, Reddit, Pixiv, Steam, Wikipedia, Rule34, and other supported services |
+| Entertainment | Fun and community-oriented commands |
 
-### Utility
-- AFK system
-- User information
-- Server information
-- Reporting tools
-- General quality-of-life commands
+Use `/help` in Discord for the latest command list. The public command overview is available in [COMMANDS.md](COMMANDS.md).
 
-### Moderation
-- Warnings
-- Mutes
-- Kicks
-- Bans
-- Anti-raid tools
-- Automoderation
-- Moderation history
+## Documentation
 
-### Integrations
-- Anime content
-- Reddit
-- Steam
-- Wikipedia
-- Pixiv
-- Additional supported services
+| Document | Purpose |
+|---|---|
+| [Command Reference](COMMANDS.md) | Public command categories and currently documented commands |
+| [Technology](TECHNOLOGY.md) | High-level tools, services, and architecture used by the project |
+| [FAQ](FAQ.md) | Common setup, usage, availability, privacy, and support questions |
+| [Inspiration](INSPIRATION.md) | Reserved for the project owner to describe the project's inspiration |
+| [Privacy Policy](PP.md) | Information the official hosted service may process and how it is handled |
+| [Terms of Service](TOS.md) | Rules and conditions for using the official hosted service |
 
----
+## Repository Relationship
 
-## Commands
+Shoukaku is split into two repositories with different audiences:
 
-Use `/help` inside Discord to view the latest command list and usage information.
+| Repository | Visibility and purpose |
+|---|---|
+| [`alG-N/ShoukakuDocs`](https://github.com/alG-N/ShoukakuDocs) | Public, user-facing documentation and the canonical Privacy Policy and Terms of Service |
+| [`alG-N/ShoukakuBot`](https://github.com/alG-N/ShoukakuBot) | Backend implementation and operational documentation intended for maintainers and approved collaborators |
 
-### General
-- AFK management
-- User information
-- Server information
-- Reporting tools
+The public documentation must not contain credentials, private configuration, internal monitoring access details, or secrets from the backend repository.
 
-### Moderation
-- Warning management
-- Member moderation
-- Server protection tools
+## Technology Overview
 
-### Music
-- Play music
-- Queue management
-- Playback controls
-- Autoplay
+Shoukaku is built primarily with TypeScript and Node.js. The hosted stack uses Discord.js, PostgreSQL, Redis, Lavalink, Docker, media-processing services, and optional observability tools.
 
-### Media
-- Download supported media content
-- Media lookup tools
+See [TECHNOLOGY.md](TECHNOLOGY.md) for a high-level breakdown. That document intentionally describes technologies without publishing sensitive deployment details.
 
----
+## Inspiration
 
-## Invite
+The Inspiration section is intentionally left for the project owner to write.
 
-```text
-https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=8&integration_type=0&scope=bot
-```
+See [INSPIRATION.md](INSPIRATION.md).
 
-## Support Server
+## Availability and Changes
 
-```text
-https://discord.gg/qGwKsqH62k
-```
+Shoukaku is an actively developed service. Commands, integrations, limits, and availability may change as Discord, third-party APIs, and project requirements evolve.
 
-## Status
+For the most current behavior:
 
-```text
-https://altergolden.dev
-```
+1. Use `/help` in Discord.
+2. Check the [support server](https://discord.gg/qGwKsqH62k).
+3. Check the [status page](https://altergolden.dev).
 
----
+## Privacy, Safety, and Abuse Reports
 
-## Privacy Policy
+- Shoukaku does not sell personal data.
+- Some features process Discord identifiers, command inputs, moderation records, temporary media data, and technical logs as described in the [Privacy Policy](PP.md).
+- Users must follow Discord's rules, applicable laws, and the [Terms of Service](TOS.md).
+- Security issues, abuse reports, and data requests should be submitted through the official support server.
 
-[Privacy Policy](PP.md)
+Do not publish security vulnerabilities, tokens, credentials, personal data, or exploit instructions in public issues.
 
-## Terms of Service
+## Documentation Contributions
 
-[Terms of Service](TOS.md)
+Corrections and improvements to public documentation are welcome. Keep submissions limited to public information and do not copy secrets or private infrastructure details from the backend repository.
 
----
+## Rights
 
-## Documentation Repository
-
-This repository is intended to provide:
-
-- Public documentation
-- Command references
-- Usage guides
-- Changelogs
-- Support information
-
-The following remain private:
-
-- Bot source code
-- Backend services
-- Deployment infrastructure
-- Internal architecture
-- Configuration files
-- Secrets and API credentials
-
----
-
-## License
-
-Documentation content may be shared and referenced according to the license specified by the repository owner.
-
-All rights to the bot implementation, backend systems, and infrastructure are reserved by the project owner.
+Unless the repository owner states otherwise, the Shoukaku name, branding, documentation, bot implementation, and infrastructure remain the property of their respective owner. Third-party names, trademarks, APIs, and content remain the property of their respective owners.
