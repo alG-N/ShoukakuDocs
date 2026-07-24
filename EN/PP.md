@@ -4,7 +4,7 @@
 **Effective date:** July 24, 2026  
 **Last updated:** July 24, 2026
 
-**Vietnamese version:** [PP_VI.md](PP_VI.md)
+**Vietnamese version:** [../VI/PP_VI.md](../VI/PP_VI.md)
 
 This Privacy Policy explains how the official hosted instance of the Shoukaku Discord bot ("Shoukaku", the "Bot", or the "Service") processes personal data.
 
@@ -187,11 +187,11 @@ A feature that materially changes data processing must not be publicly enabled b
 - Privacy, legal, copyright, and security notices: **whittylord@gmail.com**
 - Support server: https://discord.gg/qGwKsqH62k
 - Terms: [TOS.md](TOS.md)
-- Vietnamese Privacy Policy: [PP_VI.md](PP_VI.md)
+- Vietnamese Privacy Policy: [../VI/PP_VI.md](../VI/PP_VI.md)
 - Complete command inventory: [COMMANDS.md](COMMANDS.md)
 - Copyright procedure: [IP_POLICY.md](IP_POLICY.md)
 - Security procedure: [SECURITY.md](SECURITY.md)
 
 Canonical public policy:
 
-https://github.com/alG-N/ShoukakuDocs/blob/main/PP.md
+https://github.com/alG-N/ShoukakuDocs/blob/main/EN/PP.md
