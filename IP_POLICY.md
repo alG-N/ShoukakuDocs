@@ -1,6 +1,0 @@
-# COPYRIGHT AND INTELLECTUAL PROPERTY
-
-Choose a language / Chọn ngôn ngữ:
-
-- [EN — COPYRIGHT AND IP POLICY](EN/IP_POLICY.md)
-- [VI — CHÍNH SÁCH BẢN QUYỀN VÀ SỞ HỮU TRÍ TUỆ](VI/IP_POLICY.md)
