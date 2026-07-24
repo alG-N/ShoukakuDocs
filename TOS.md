@@ -1,125 +1,120 @@
 # Terms of Service
 
-**Last updated:** July 15, 2026
+**Version:** 2.0  
+**Effective date:** July 24, 2026  
+**Last updated:** July 24, 2026
 
 These Terms of Service ("Terms") govern access to and use of the official hosted instance of the Shoukaku Discord bot ("Shoukaku", the "Bot", or the "Service").
 
-By inviting, configuring, accessing, or using Shoukaku, you agree to these Terms. If you do not agree, do not use the Service.
+The Service is operated by **alterGolden**, an individual software developer based in Vietnam (the "Operator"). Legal notices may be sent to **whittylord@gmail.com**.
 
-These Terms apply only to the official Shoukaku service operated by the project owner. Unofficial copies, forks, and independently hosted deployments may have different terms.
+By inviting, configuring, authorizing, accessing, or using Shoukaku, you confirm that you have read and agree to these Terms and the [Privacy Policy](PP.md). If you act for a Discord server or organization, you represent that you are authorized to accept these Terms for it. If you do not agree, do not use the Service.
 
-## 1. Eligibility and Discord Rules
+These Terms apply only to the official hosted Service. Forks, copies, and independently hosted deployments are operated separately.
+
+## 1. Eligibility and Platform Rules
 
 You may use Shoukaku only if you:
 
-- meet Discord's minimum age requirements and any higher age required by local law;
+- meet Discord's minimum age requirements and any higher age required by applicable law;
 - are legally able to agree to these Terms;
-- comply with Discord's Terms of Service, Community Guidelines, Developer Terms where applicable, and all applicable laws;
-- have the required server permissions before inviting or configuring the Bot.
+- comply with Discord's Terms, Community Guidelines, Developer rules where applicable, and applicable law;
+- have authorization to invite or configure the Bot in the relevant server.
 
-Age-restricted or NSFW features may only be used by legally eligible users in appropriately configured channels.
+The official Service does not register public adult-content commands.
 
-## 2. Permission to Use the Service
+## 2. Limited Permission to Use the Service
 
-Subject to these Terms, the project owner grants users a limited, revocable, non-exclusive, non-transferable permission to use the official hosted Service for its intended Discord features.
+Subject to these Terms, the Operator grants you a limited, revocable, non-exclusive, non-transferable permission to use the official Service for its intended Discord features.
 
-This permission does not grant ownership of Shoukaku, its source code, branding, infrastructure, documentation, or proprietary systems.
+No ownership or license is granted in the Bot's source code, branding, documentation, infrastructure, or proprietary systems except as expressly stated in [LICENSE](LICENSE).
 
 ## 3. Acceptable Use
 
 You must not use Shoukaku to:
 
-- violate any law, court order, contract, intellectual-property right, privacy right, or Discord rule;
+- violate law, court orders, contracts, intellectual-property rights, privacy rights, or Discord rules;
 - harass, threaten, exploit, impersonate, dox, defraud, or harm another person;
-- distribute malware, phishing material, stolen credentials, malicious links, or illegal content;
+- distribute malware, phishing material, stolen credentials, malicious links, illegal content, or non-consensual intimate material;
+- expose minors to adult content or attempt to use disabled adult-content integrations;
 - spam commands, overload the Service, evade rate limits, or intentionally degrade availability;
-- bypass permissions, channel restrictions, age gates, cooldowns, safety controls, or access controls;
-- exploit vulnerabilities, reverse engineer protected systems, obtain secrets, or access internal services without authorization;
-- automate abusive usage, scrape the Service, or create excessive traffic outside normal intended use;
-- use media features to infringe copyright, evade digital-rights protections, or violate a platform's applicable rules;
-- submit passwords, authentication tokens, payment information, or other highly sensitive information through commands.
+- bypass permissions, channel restrictions, safety controls, access controls, or technical restrictions;
+- probe, exploit, reverse engineer protected systems, obtain secrets, or access internal services without authorization;
+- scrape or automate the Service outside normal intended use;
+- submit passwords, authentication tokens, session cookies, payment information, or other highly sensitive information;
+- use music or media features to infringe copyright, breach source terms, bypass access controls, or redistribute content without permission.
 
-The project owner may limit, suspend, or block users, servers, features, or requests that violate these Terms or threaten the Service.
+The Operator may block or limit requests, features, users, or servers that present legal, safety, privacy, security, copyright, or operational risk.
 
 ## 4. Server Administrator Responsibilities
 
 Server owners and administrators are responsible for:
 
-- deciding whether Shoukaku is appropriate for their community;
-- granting only the permissions reasonably required for enabled features;
-- configuring moderation, automoderation, logging, NSFW, and anti-raid features appropriately;
-- informing their members about the use of bots and moderation tools where required;
-- reviewing moderation actions and resolving disputes within their server;
-- complying with local law and Discord policy when storing or using moderation records.
+- deciding whether the Service is appropriate for their community;
+- granting only the minimum permissions needed for enabled features;
+- configuring moderation, logging, automoderation, and anti-raid features lawfully;
+- informing members about bot processing and moderation tools where required;
+- controlling which staff can access moderation records;
+- reviewing automated or assisted moderation decisions;
+- responding to member complaints and deletion requests involving server-controlled records.
 
-Shoukaku provides tools; it does not replace human judgment. The project owner is not responsible for a server administrator's moderation decisions or configuration choices.
+Administrator permission is not required by the official invite link and should not be granted merely for convenience.
 
-## 5. User Content, Commands, and Reports
+## 5. User Content and Instructions
 
-You are responsible for information, links, search terms, reports, moderation reasons, and other content you submit through Shoukaku.
+You are responsible for links, search terms, reports, moderation reasons, and other content or instructions you submit.
 
-You grant the Service permission to process that content only as needed to execute the requested feature, maintain security, provide support, enforce these Terms, and operate the Service as described in the Privacy Policy.
+You grant the Service permission to process submitted content only as needed to provide the requested feature, secure the Service, provide support, enforce these Terms, and comply with law as described in the Privacy Policy.
 
-You represent that you have the necessary rights and authority to submit the content and request the action.
+You represent that you have the rights and authority required to submit the content and request the action.
 
-## 6. Media and Third-Party Content
+## 6. Music, Media, and Third-Party Services
 
-Shoukaku may retrieve, transform, display, link to, or process content from third-party services. You are responsible for ensuring that your use of such content is lawful and permitted by the relevant platform and rights holder.
+Shoukaku may search, link to, transform, transmit, or temporarily process content from approved third-party services.
 
-The project owner does not claim ownership of third-party content and does not guarantee its accuracy, legality, safety, availability, or continued accessibility.
+The public `/download` command is disabled. Remaining music and media features are for supported public content and lawful uses. You must not ask the Service to:
 
-Media-processing and download features are provided for lawful use only. They must not be used to infringe copyright, bypass access restrictions, or redistribute content without permission.
+- access private, paid, subscriber-only, age-restricted, or region-restricted content;
+- use account credentials, cookies, tokens, or authenticated sessions;
+- bypass DRM, paywalls, access controls, or technological protection measures;
+- copy or redistribute material without permission;
+- violate a source platform's applicable terms.
 
-## 7. NSFW and Age-Restricted Features
+The Operator does not claim ownership of third-party content and does not guarantee its accuracy, legality, safety, availability, or continued accessibility. The Operator may remove a source or integration immediately following a complaint, policy change, or risk assessment.
 
-Some integrations may return adult-oriented or age-restricted content.
+Copyright notices are handled under [IP_POLICY.md](IP_POLICY.md).
 
-Users and server administrators must ensure that:
+## 7. Disabled High-Risk Features
 
-- the user is legally eligible to access the content;
-- the command is used only in an appropriately marked channel;
-- Discord's policies and local law are followed;
-- minors are not intentionally exposed to age-restricted content.
+The official Service currently does not register `/nhentai`, `/rule34`, `/download`, or `/snipe`.
 
-The project owner may disable or restrict these features at any time.
+Historical source code, references, tests, or internal components do not create a promise that a feature is available. Re-enabling a high-risk feature requires an updated risk review, appropriate backend controls, and updated public documentation before public use.
 
-## 8. Privacy
+## 8. Privacy and Security
 
-Use of Shoukaku is also governed by the [Privacy Policy](PP.md), which explains the categories of information the Service may process, the purposes of processing, retention, third-party services, and data-request options.
+Use of Shoukaku is governed by the [Privacy Policy](PP.md). Security issues must be reported under [SECURITY.md](SECURITY.md).
+
+Do not submit secrets or sensitive personal information through ordinary Discord commands.
 
 ## 9. Service Availability and Changes
 
-Shoukaku is provided on an **"as is"** and **"as available"** basis.
-
-The project owner may, with or without notice:
-
-- add, remove, limit, or modify commands and integrations;
-- impose usage limits or cooldowns;
-- perform maintenance;
-- discontinue a feature or the entire Service;
-- change supported platforms when third-party APIs or policies change.
+The Service is provided on an **"as is"** and **"as available"** basis. The Operator may add, remove, suspend, limit, or modify commands, providers, limits, and the Service itself, including without prior notice where necessary for security, law, platform compliance, or operations.
 
 No guarantee is made that the Service will be uninterrupted, error-free, secure, or permanently available.
 
-## 10. Suspension and Termination
+## 10. Suspension, Termination, and Appeals
 
-Access may be suspended or terminated for reasons including:
+Access may be suspended or terminated for violations, abuse, fraud, security threats, legal requirements, repeated disruption, or risk to users, infrastructure, or third parties.
 
-- violation of these Terms or Discord policy;
-- abuse, spam, fraud, security threats, or unlawful activity;
-- repeated disruption of the Service;
-- legal or operational requirements;
-- risks to users, infrastructure, or third-party services.
+A user or server administrator may appeal a Service-level block by emailing **whittylord@gmail.com** with the affected Discord user or server ID and a brief explanation. The Operator may require verification and may uphold restrictions needed for safety, law, platform policy, or security.
 
-Users may stop using Shoukaku at any time. An authorized administrator may remove the Bot from a server.
+Users may stop using the Service at any time. An authorized administrator may remove the Bot from a server.
 
-Sections that logically should continue after termination, including ownership, disclaimers, limitations, and responsibility for prior conduct, will remain effective.
+## 11. Intellectual Property and No Affiliation
 
-## 11. Intellectual Property
+The Operator or applicable licensors retain rights in Shoukaku's original source code, branding, documentation, design, and infrastructure.
 
-Shoukaku's original source code, branding, documentation, design, and infrastructure remain the property of the project owner or their licensors unless expressly stated otherwise.
-
-Discord, third-party service names, trademarks, APIs, and retrieved content remain the property of their respective owners.
+Discord and all third-party names, trademarks, APIs, software, and content remain the property of their respective owners. Shoukaku is an independent project and is not affiliated with, endorsed by, or sponsored by Discord, C2 Praparat, Kadokawa, DMM.com, Kantai Collection, or any integrated platform.
 
 You may not falsely claim ownership of or official affiliation with Shoukaku.
 
@@ -127,25 +122,51 @@ You may not falsely claim ownership of or official affiliation with Shoukaku.
 
 To the maximum extent permitted by applicable law, the Service is provided without warranties of any kind, whether express, implied, or statutory, including warranties of merchantability, fitness for a particular purpose, non-infringement, accuracy, reliability, or availability.
 
-The project owner does not warrant that moderation results, media results, search results, third-party content, or automated decisions will always be correct or complete.
+The Operator does not warrant that moderation results, media results, search results, third-party content, or automated decisions will always be correct or complete.
+
+Nothing in these Terms excludes warranties or rights that cannot lawfully be excluded.
 
 ## 13. Limitation of Liability
 
-To the maximum extent permitted by applicable law, the project owner and contributors will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of data, profits, goodwill, access, or business opportunity arising from or related to use of the Service.
+To the maximum extent permitted by applicable law, the Operator and contributors will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of data, profits, goodwill, access, or business opportunity arising from or related to the Service.
 
-Where liability cannot legally be excluded, it will be limited to the minimum amount permitted by applicable law.
+Where liability cannot lawfully be excluded, the aggregate liability arising from the Service will not exceed the greater of:
 
-## 14. Changes to These Terms
+1. the amount you paid directly to the Operator for the Service during the 12 months before the event giving rise to liability; or
+2. VND 1,000,000.
 
-These Terms may be updated when the Service, legal requirements, integrations, or project practices change. The current version will be published in this repository with an updated date.
+This limitation does not apply where prohibited by law, including liability that cannot be limited for fraud, intentional misconduct, or mandatory consumer rights.
 
-Continued use after revised Terms become effective constitutes acceptance of the revised Terms where permitted by law.
+## 14. Indemnity
 
-## 15. Contact
+To the extent permitted by law, you are responsible for losses, claims, or costs resulting from your unlawful use of the Service, your content, or your violation of these Terms. This section does not require a consumer to waive mandatory legal protections.
 
-For support, abuse reports, security concerns, data requests, or legal inquiries, contact the project owner through the official Shoukaku support server:
+## 15. Changes to These Terms
 
-https://discord.gg/qGwKsqH62k
+The current version and effective date will be published in this repository. Material changes will be announced through an appropriate project channel where reasonably practical.
+
+Changes required for security, law, or platform compliance may take effect immediately. Other material changes will state their effective date. Continued use after the effective date constitutes acceptance where permitted by law.
+
+## 16. Governing Law and Disputes
+
+These Terms are governed by the laws of Vietnam, without excluding mandatory protections that apply under the law of a user's country of residence.
+
+Before filing a claim, the parties should attempt in good faith to resolve the dispute by email. Unless mandatory law provides otherwise, disputes will be submitted to the competent courts of Vietnam.
+
+## 17. General Terms
+
+- **Severability:** If part of these Terms is unenforceable, the remaining provisions remain effective.
+- **No waiver:** Failure to enforce a provision is not a waiver of it.
+- **Assignment:** You may not assign these Terms without the Operator's consent. The Operator may assign them as part of a lawful transfer of the Service.
+- **Entire agreement:** These Terms, the Privacy Policy, and incorporated policies form the entire agreement for the official Service.
+- **Order of precedence:** Mandatory law controls where it conflicts with these Terms.
+
+## 18. Contact
+
+- Support and abuse reports: https://discord.gg/qGwKsqH62k
+- Legal, privacy, copyright, and security notices: **whittylord@gmail.com**
+- Copyright procedure: [IP_POLICY.md](IP_POLICY.md)
+- Security procedure: [SECURITY.md](SECURITY.md)
 
 Canonical public Terms:
 

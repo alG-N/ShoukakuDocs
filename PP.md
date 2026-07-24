@@ -1,148 +1,143 @@
 # Privacy Policy
 
-**Last updated:** July 15, 2026
+**Version:** 2.0  
+**Effective date:** July 24, 2026  
+**Last updated:** July 24, 2026
 
-This Privacy Policy explains how the official hosted instance of the Shoukaku Discord bot ("Shoukaku", the "Bot", or the "Service") processes information when users, server administrators, and visitors interact with it.
+This Privacy Policy explains how the official hosted instance of the Shoukaku Discord bot ("Shoukaku", the "Bot", or the "Service") processes personal data.
 
-This policy applies to the official Shoukaku service operated by the project owner. It does not automatically apply to unofficial copies, forks, or independently hosted deployments.
+## 1. Controller and Contact
 
-## 1. Information Shoukaku May Process
+The Service is operated and controlled by **alterGolden**, an individual software developer based in Vietnam (the "Operator").
 
-Shoukaku processes only the information reasonably needed to provide its features, keep the Service secure, and maintain reliable operation.
+Privacy requests and legal notices may be sent to **whittylord@gmail.com**. The support server may help with ordinary support, but email is the primary channel for access, correction, deletion, objection, restriction, and complaint requests.
 
-### Discord identifiers and server context
+This policy applies only to the official hosted Service. It does not automatically apply to forks or independently hosted deployments.
 
-The Bot may process:
+## 2. Current Feature Status
 
-- Discord user IDs;
-- Discord server (guild) IDs;
-- Discord channel, thread, message, and role IDs;
-- usernames, display names, avatars, and other profile information made available by Discord;
-- server permissions and role information needed to authorize commands.
+The official Service currently does not register `/nhentai`, `/rule34`, `/download`, or `/snipe`.
 
-### Command inputs and user-provided content
+- No new `/snipe` deleted-message collection should occur while the backend collection flag remains disabled.
+- The public `/download` workflow is unavailable.
+- Historical source code, tests, database schemas, or documentation references do not mean those features are active.
 
-Depending on the feature used, the Bot may process:
+If a high-risk feature is re-enabled, the Operator must update this policy and implement appropriate controls before public use.
 
-- slash-command names, options, search terms, links, and URLs;
-- moderation reasons, reports, and other text submitted through commands;
-- message content or attachment metadata when required for automoderation, anti-abuse, moderation, snipe, media, or similar features;
-- media queries, music searches, queue entries, and playback requests.
+## 3. Data Categories, Purposes, and Retention
 
-Shoukaku does not receive a Discord user's password or private Discord login credentials. The Bot does not request payment-card information.
+| Data category | Examples | Purpose and processing basis | Current retention |
+|---|---|---|---|
+| Discord identifiers and server context | User, guild, channel, role, message, and interaction IDs; display names; avatars; permissions | Execute requested commands, verify authorization, maintain server configuration, prevent abuse. Necessary to provide the requested Service and for legitimate security/operational interests. | Transient interaction data is kept only for the request or cache lifetime. Durable server configuration remains until an authorized administrator deletes it, a verified deletion request is completed, or it is no longer needed. |
+| Moderation records | Warnings, cases, reasons, moderator IDs, action metadata | Provide server-requested moderation history, resolve disputes, prevent abuse. Controlled by authorized server staff and the Operator's legitimate interests. | Retained until deleted by an authorized server administrator or following a verified request, except where a temporary security or legal hold is necessary. Removing the Bot does not automatically erase every durable moderation record. |
+| Command inputs and reports | Search terms, public URLs, report text, moderation reasons | Execute the requested feature, provide support, investigate abuse, enforce rules. | Kept for the request unless the feature requires a record. Reports and abuse records remain until resolved and no longer needed for security, dispute, or legal purposes. |
+| Music state | Queue entries, requested tracks, playback state, optional history | Provide voice playback and requested queue/history features. | Active queue and playback state are temporary. Optional history remains until cleared, replaced, or removed through maintenance or a verified request. |
+| Temporary media data | Public URL, processing job metadata, temporary files, generated public-object key | Provide approved `/media` and embed workflows. | Current source-file cleanup defaults to a maximum age of 1,800 seconds. If temporary public-object delivery is enabled, the configured object lifecycle currently targets no more than 86,400 seconds. Upstream URLs may expire under provider rules. |
+| Rate limits and security signals | Cooldowns, request counters, abuse indicators, incident records | Prevent spam, fraud, attacks, and service disruption. | Short-lived counters expire according to cache configuration. Incident records may be retained while reasonably necessary to investigate and prevent repeated abuse. |
+| Technical logs and diagnostics | Command name and timestamp, errors, stack traces, health and performance data | Debugging, security, availability, and incident response. | Core container logs use bounded rotating files by size rather than indefinite append-only storage. Optional external observability providers apply the retention configured in their account. Logs may be preserved longer only for an active incident or legal obligation. |
+| Web request metadata | Standard request time, route, user agent, and network metadata when visiting official web endpoints | Deliver and secure the website, status, health, or media endpoint. | Retained in bounded operational logs and provider systems according to the controls above. Discord does not provide the Bot with a user's IP address merely because the user runs a Discord command. |
 
-### Stored feature data
+The Service does not sell personal data and does not use Discord API data for third-party behavioral advertising.
 
-The Service may store or cache information such as:
+## 4. Message Content
 
-- moderation warnings, cases, reasons, responsible moderator IDs, and related server records;
-- server settings, automoderation configuration, and anti-raid configuration;
-- AFK state and other user-configured feature data;
-- music history, preferences, queue-related state, or playback metadata;
-- cooldowns, rate-limit information, abuse-prevention signals, and temporary interaction state;
-- temporary media-processing results, URLs, or cached responses.
+Shoukaku does not operate as a general archive of all server messages.
 
-### Technical and operational data
+Message content may be processed when required for an enabled moderation, automoderation, anti-abuse, reporting, or user-requested feature. The `/snipe` collection path is disabled by default in the official backend and is not registered as a public command.
 
-The Service may generate technical information including:
+Server administrators are responsible for enabling and configuring server-controlled moderation features lawfully and for limiting staff access.
 
-- command timestamps and command names;
-- error messages, stack traces, service health information, and performance metrics;
-- logs used for debugging, abuse prevention, security, and reliability;
-- standard network request metadata when a person visits an official Shoukaku web or status endpoint.
+## 5. Data Sources
 
-Discord does not provide the Bot with a user's IP address merely because that user runs a Discord command. Standard web infrastructure may, however, process network information when a user directly visits a Shoukaku-hosted web endpoint.
+Data may come from:
 
-## 2. How Information Is Used
+- Discord and the Discord user or server administrator;
+- content and URLs intentionally submitted through commands;
+- enabled third-party APIs requested by the user;
+- the Operator's infrastructure, security controls, and support channels.
 
-Information may be used to:
+The Bot does not receive a Discord user's password. Users must not submit passwords, cookies, tokens, payment-card information, or private account credentials.
 
-- execute commands and return requested results;
-- provide music, media, utility, moderation, and entertainment features;
-- verify permissions and enforce server-specific settings;
-- maintain moderation history and server safety tools;
-- prevent spam, raids, misuse, fraud, and attempts to disrupt the Service;
-- diagnose errors, monitor availability, improve performance, and maintain security;
-- respond to support, legal, privacy, and abuse requests;
-- comply with applicable law and enforce the Terms of Service.
+## 6. Service Providers and International Processing
 
-Shoukaku does not sell personal information and does not use Discord data for third-party behavioral advertising.
+Depending on enabled features, data may be processed by:
 
-## 3. Third-Party Services
+- **Discord**, for interactions, messages, permissions, and voice connectivity;
+- **hosting and network providers**, including Cloudflare where configured;
+- **Sentry or similar observability providers**, when enabled;
+- **approved source providers**, such as Reddit, Pixiv, Steam, Wikipedia, anime information providers, and supported media/audio providers;
+- infrastructure controlled by the Operator, including PostgreSQL, Redis, Lavalink, and media-processing services.
 
-Some commands require Shoukaku to communicate with third-party platforms or infrastructure providers. Depending on the command, limited information such as a search query, media URL, or technical request may be sent to services used for:
+The Operator is based in Vietnam. Discord, Cloudflare, Sentry, and third-party providers may process data in the United States and other countries where they operate. Their own terms and privacy policies govern their independent processing.
 
-- Discord interactions and voice connectivity;
-- music playback and source resolution;
-- media retrieval or processing through Cobalt, yt-dlp, or similar services;
-- content retrieval from services such as Reddit, Pixiv, Steam, Wikipedia, anime data providers, and supported media platforms;
-- error monitoring, hosting, networking, and observability.
+The Operator should assess and document cross-border transfers and service-provider arrangements required by applicable law.
 
-Third-party services process information under their own terms and privacy policies. Shoukaku does not control their independent data practices, availability, or content.
+## 7. Sharing and Disclosure
 
-## 4. Data Retention
+Personal data may be shared only when necessary to:
 
-Retention depends on the type of information and the feature involved:
+- provide a user-requested feature through an approved provider;
+- investigate abuse, security incidents, or Terms violations;
+- protect users, the Service, the Operator, or the public;
+- comply with a valid legal obligation or lawful request;
+- transfer operation of the Service as part of a lawful reorganization with appropriate protections.
 
-- active server configuration and moderation records may remain until deleted through available features, removed by an administrator, no longer needed, or deleted following a valid request where feasible;
-- temporary queues, interaction state, caches, cooldowns, and media-processing data are generally retained only for the time needed to provide the feature or maintain reliability;
-- music history or other optional persistent features may remain until cleared, replaced, or removed through normal maintenance;
-- technical logs and security records are retained only as long as reasonably necessary for debugging, security, abuse prevention, and operational requirements.
+Discord API data is not sold. Service providers must receive only the data reasonably necessary for their task.
 
-Removing the Bot from a server may stop new processing but may not immediately erase every existing moderation record, backup, or operational log. Server owners or affected users may request deletion through the official support server.
+## 8. Your Rights and Choices
 
-## 5. Data Sharing and Disclosure
+Subject to applicable law, you may request to:
 
-Information may be disclosed only when reasonably necessary to:
+- know whether and how your personal data is processed;
+- access a copy of associated data;
+- correct inaccurate data;
+- delete data;
+- restrict or object to processing;
+- withdraw consent where processing relies on consent;
+- complain to a competent authority;
+- receive an explanation of a Service-level restriction affecting you.
 
-- operate a requested feature through a service provider or third-party integration;
-- investigate abuse, security incidents, or violations of the Terms of Service;
-- protect users, the Service, the project owner, or the public;
-- comply with a valid legal obligation, court order, or lawful request;
-- transfer operation of the Service as part of a project reorganization, provided appropriate protections are maintained.
+Email **whittylord@gmail.com** with your Discord user ID, relevant server ID, the feature involved, and the request. Verification may be required to prevent unauthorized disclosure or deletion.
 
-Shoukaku does not sell user data.
+Some data may be retained temporarily where necessary for security, legal compliance, fraud prevention, dispute resolution, or the rights of others. The Operator will explain an applicable exception when reasonably possible.
 
-## 6. User and Server Administrator Choices
+Server-controlled moderation records may also require action by the relevant server administrator.
 
-Users and server administrators may:
+## 9. Deletion and Bot Removal
 
-- stop using the Bot at any time;
-- remove the Bot from a server if they have permission to do so;
-- use available commands to clear supported records or configuration;
-- request access to, correction of, or deletion of associated data where technically feasible and legally required.
+An authorized administrator may remove the Bot from a server at any time. Removal stops new server interactions and clears supported transient caches, but it may not immediately erase durable moderation records, backups, provider logs, or incident records.
 
-A request should include the relevant Discord user ID and, when applicable, the Discord server ID. Additional verification may be required to prevent unauthorized disclosure or deletion.
+A verified deletion request is the appropriate process for durable records that cannot be removed through an available server command.
 
-Some records may be retained when required for security, abuse prevention, legal compliance, dispute resolution, or the protection of other users.
+## 10. Security
 
-## 7. Children and Age-Restricted Content
+The Service uses access controls, secret management, network separation, least-privilege service accounts, bounded logging, and operational monitoring.
 
-Users must meet Discord's minimum age requirements and any higher minimum age required by local law.
+Production environments processing Discord API data must use encryption at rest and appropriate transport security. If a deployment does not meet that requirement, it must not be treated as an approved production environment.
 
-Age-restricted or NSFW features must only be used by legally eligible users in appropriately configured channels. The project does not knowingly seek to collect information from children below the applicable minimum age.
+No online service can guarantee absolute security. Security incidents will be investigated and affected users and Discord will be notified where required by law or platform terms.
 
-## 8. Security
+See [SECURITY.md](SECURITY.md) for vulnerability reporting.
 
-Reasonable administrative and technical safeguards are used to protect stored information, including access controls, secret management, restricted operational interfaces, and monitoring.
+## 11. Children
 
-No online service can guarantee absolute security. Users should not submit passwords, authentication tokens, payment information, or other highly sensitive information through Bot commands.
+The Service is not directed to children below Discord's minimum age or a higher minimum age required by local law. The official Service does not register adult-content commands.
 
-## 9. International Processing
+If the Operator learns that data was collected from a person below the applicable minimum age without a lawful basis, the Operator will take appropriate steps to delete or restrict it.
 
-The Service and its providers may process information in countries other than the user's country. Data protection rules may differ between jurisdictions.
+## 12. Policy Changes
 
-## 10. Changes to This Policy
+The current version and effective date will be published in this repository. Material changes will be announced through an appropriate project channel where reasonably practical.
 
-This Privacy Policy may be updated when features, integrations, legal requirements, or operational practices change. The current version will be published in this repository with an updated date.
+A feature that materially changes data processing must not be publicly enabled before the policy is updated.
 
-Material changes may also be announced through the official support server or another appropriate project channel.
+## 13. Contact and Complaints
 
-## 11. Contact and Data Requests
-
-For privacy questions, deletion requests, security concerns, or legal inquiries, contact the project owner through the official Shoukaku support server:
-
-https://discord.gg/qGwKsqH62k
+- Privacy, legal, copyright, and security notices: **whittylord@gmail.com**
+- Support server: https://discord.gg/qGwKsqH62k
+- Terms: [TOS.md](TOS.md)
+- Copyright procedure: [IP_POLICY.md](IP_POLICY.md)
+- Security procedure: [SECURITY.md](SECURITY.md)
 
 Canonical public policy:
 
