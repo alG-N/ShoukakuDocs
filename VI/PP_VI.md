@@ -4,7 +4,7 @@
 **Ngày có hiệu lực:** 24 tháng 7 năm 2026  
 **Cập nhật lần cuối:** 24 tháng 7 năm 2026
 
-**Bản tiếng Anh:** [PP.md](PP.md)
+**Bản tiếng Anh:** [../EN/PP.md](../EN/PP.md)
 
 Chính sách này giải thích cách phiên bản Shoukaku Discord bot được vận hành chính thức ("Shoukaku", "Bot" hoặc "Dịch vụ") xử lý dữ liệu cá nhân.
 
@@ -187,11 +187,11 @@ Tính năng làm thay đổi đáng kể cách xử lý dữ liệu không đư�
 - Thông báo về quyền riêng tư, pháp lý, bản quyền và bảo mật: **whittylord@gmail.com**
 - Máy chủ hỗ trợ: https://discord.gg/qGwKsqH62k
 - Điều khoản Dịch vụ: [TOS_VI.md](TOS_VI.md)
-- Bản Chính sách Quyền riêng tư tiếng Anh: [PP.md](PP.md)
+- Bản Chính sách Quyền riêng tư tiếng Anh: [../EN/PP.md](../EN/PP.md)
 - Danh mục lệnh đầy đủ: [COMMANDS.md](COMMANDS.md)
 - Quy trình bản quyền: [IP_POLICY.md](IP_POLICY.md)
 - Quy trình bảo mật: [SECURITY.md](SECURITY.md)
 
 Bản Chính sách tiếng Việt chính thức:
 
-https://github.com/alG-N/ShoukakuDocs/blob/main/PP_VI.md
+https://github.com/alG-N/ShoukakuDocs/blob/main/VI/PP_VI.md
