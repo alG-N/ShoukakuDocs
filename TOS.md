@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Version:** 2.1  
+**Version:** 2.2  
 **Effective date:** July 24, 2026  
 **Last updated:** July 24, 2026
 
@@ -33,7 +33,9 @@ The official Service does not register public adult-content commands.
 
 Subject to these Terms, the Operator grants you a limited, revocable, non-exclusive, non-transferable permission to use the official Service for its intended Discord features.
 
-No ownership or license is granted in the Bot's source code, branding, documentation, infrastructure, or proprietary systems except as expressly stated in [LICENSE](LICENSE).
+No ownership or license is granted in the Bot's source code, branding, documentation, infrastructure, or proprietary systems except as expressly stated in the applicable repository [LICENSE](LICENSE) or another written permission from the Operator.
+
+The documentation and backend repositories may be publicly viewable. Public visibility does not itself grant permission to copy, modify, redistribute, sell, host, or create derivative works from the code or documentation.
 
 Unless the Operator expressly announces a paid plan, the official Service is provided without charge. A future paid or commercial offering may require additional terms, pricing disclosures, invoicing information, and consumer-protection notices before it becomes available.
 
@@ -64,7 +66,8 @@ Server owners and administrators are responsible for:
 - informing members about bot processing and moderation tools where required;
 - controlling which staff can access moderation records;
 - reviewing automated or assisted moderation decisions;
-- responding to member complaints and deletion requests involving server-controlled records.
+- responding to member complaints and deletion requests involving server-controlled records;
+- applying appropriate channel restrictions where third-party content may be mature or sensitive.
 
 Administrator permission is not required by the official invite link and should not be granted merely for convenience.
 
@@ -83,20 +86,30 @@ Shoukaku may search, link to, transform, transmit, or temporarily process conten
 The public `/download` command is disabled. Remaining music and media features are for supported public content and lawful uses. You must not ask the Service to:
 
 - access private, paid, subscriber-only, age-restricted, or region-restricted content;
-- use account credentials, cookies, tokens, or authenticated sessions;
+- use credentials, cookies, tokens, or authenticated sessions supplied by you or another end user;
 - bypass DRM, paywalls, access controls, or technological protection measures;
 - copy or redistribute material without permission;
 - violate a source platform's applicable terms.
+
+The backend may use Operator-controlled API keys, application credentials, or service tokens for approved integrations where permitted. This does not authorize users to provide personal account credentials or request access to non-public content.
+
+The `/media` command may support public social links and direct image or GIF URLs. Some third-party hosts can contain mature material. Shoukaku is not an age-verification system, and the absence of dedicated adult-content commands does not guarantee that every user-submitted public URL is suitable for every channel or audience.
 
 The Operator does not claim ownership of third-party content and does not guarantee its accuracy, legality, safety, availability, or continued accessibility. The Operator may remove a source or integration immediately following a complaint, policy change, or risk assessment.
 
 Copyright notices are handled under [IP_POLICY.md](IP_POLICY.md).
 
-## 7. Disabled High-Risk Features
+## 7. Command Inventory and Disabled Features
+
+The [complete command reference](COMMANDS.md) lists active, restricted, and disabled implementations so that current behavior and historical source references can be distinguished.
 
 The official Service currently does not register `/nhentai`, `/rule34`, `/download`, or `/snipe`.
 
-Historical source code, references, tests, or internal components do not create a promise that a feature is available. Re-enabling a high-risk feature requires an updated risk review, appropriate backend controls, and updated public documentation before public use.
+Historical source code, references, tests, database structures, screenshots, or internal components do not create a promise that a feature is available. Keeping an implementation file in a public repository does not activate the corresponding Discord command.
+
+Previously deployed Discord commands may remain visible until the current application command registry is successfully overwritten. A visible stale command is not a promise that its backend function is available.
+
+Re-enabling a high-risk feature requires an updated risk review, appropriate backend controls, and updated public documentation before public use.
 
 ## 8. Privacy and Security
 
@@ -175,10 +188,8 @@ Before filing a claim, the parties should attempt in good faith to resolve the d
 
 - Support and abuse reports: https://discord.gg/qGwKsqH62k
 - Legal, privacy, copyright, and security notices: **whittylord@gmail.com**
+- Privacy Policy: [PP.md](PP.md)
+- Complete command inventory: [COMMANDS.md](COMMANDS.md)
 - Copyright procedure: [IP_POLICY.md](IP_POLICY.md)
 - Security procedure: [SECURITY.md](SECURITY.md)
 - Vietnamese Terms: [TOS_VI.md](TOS_VI.md)
-
-Canonical public Terms:
-
-https://github.com/alG-N/ShoukakuDocs/blob/main/TOS.md

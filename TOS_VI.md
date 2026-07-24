@@ -1,6 +1,6 @@
 # Điều khoản Dịch vụ
 
-**Phiên bản:** 2.1  
+**Phiên bản:** 2.2  
 **Ngày có hiệu lực:** 24 tháng 7 năm 2026  
 **Cập nhật lần cuối:** 24 tháng 7 năm 2026
 
@@ -27,13 +27,15 @@ Bạn chỉ được sử dụng Shoukaku khi:
 - tuân thủ Điều khoản, Nguyên tắc Cộng đồng, quy định dành cho nhà phát triển của Discord và pháp luật áp dụng;
 - có thẩm quyền mời hoặc cấu hình Bot trong máy chủ liên quan.
 
-Dịch vụ chính thức không đăng ký các lệnh công khai về nội dung người lớn.
+Dịch vụ chính thức không đăng ký các lệnh công khai chuyên biệt về nội dung người lớn.
 
 ## 2. Quyền sử dụng có giới hạn
 
 Với điều kiện tuân thủ Điều khoản này, Người vận hành cấp cho bạn quyền sử dụng Dịch vụ chính thức có giới hạn, có thể bị thu hồi, không độc quyền và không được chuyển giao, chỉ nhằm sử dụng các tính năng Discord đúng mục đích.
 
-Bạn không được cấp quyền sở hữu hoặc giấy phép đối với mã nguồn, thương hiệu, tài liệu, hạ tầng hoặc hệ thống độc quyền của Bot, trừ nội dung được quy định rõ trong [LICENSE](LICENSE).
+Bạn không được cấp quyền sở hữu hoặc giấy phép đối với mã nguồn, thương hiệu, tài liệu, hạ tầng hoặc hệ thống độc quyền của Bot, trừ nội dung được quy định rõ trong [LICENSE](LICENSE) của kho liên quan hoặc văn bản cho phép khác của Người vận hành.
+
+Kho tài liệu và kho backend có thể được công khai để xem. Việc công khai không tự động cấp quyền sao chép, sửa đổi, phân phối lại, bán, tự lưu trữ hoặc tạo sản phẩm phái sinh từ mã nguồn hay tài liệu.
 
 Trừ khi Người vận hành công bố rõ một gói trả phí, Dịch vụ chính thức được cung cấp miễn phí. Một dịch vụ trả phí hoặc thương mại trong tương lai có thể cần điều khoản bổ sung, công bố giá, thông tin hóa đơn và thông báo bảo vệ người tiêu dùng trước khi được cung cấp.
 
@@ -64,7 +66,8 @@ Chủ sở hữu và quản trị viên máy chủ chịu trách nhiệm:
 - thông báo cho thành viên về việc Bot xử lý dữ liệu và công cụ kiểm duyệt khi pháp luật yêu cầu;
 - kiểm soát nhân sự được truy cập hồ sơ kiểm duyệt;
 - rà soát các quyết định kiểm duyệt tự động hoặc có hỗ trợ tự động;
-- xử lý khiếu nại và yêu cầu xóa liên quan đến hồ sơ do máy chủ kiểm soát.
+- xử lý khiếu nại và yêu cầu xóa liên quan đến hồ sơ do máy chủ kiểm soát;
+- áp dụng giới hạn kênh phù hợp khi nội dung bên thứ ba có thể mang tính người lớn hoặc nhạy cảm.
 
 Liên kết mời chính thức không yêu cầu quyền Administrator và không nên cấp quyền này chỉ vì thuận tiện.
 
@@ -83,20 +86,30 @@ Shoukaku có thể tìm kiếm, liên kết, chuyển đổi, truyền hoặc x�
 Lệnh công khai `/download` đã bị vô hiệu hóa. Các tính năng âm nhạc và phương tiện còn lại chỉ dành cho nội dung công khai được hỗ trợ và mục đích hợp pháp. Bạn không được yêu cầu Dịch vụ:
 
 - truy cập nội dung riêng tư, trả phí, dành cho thuê bao, giới hạn độ tuổi hoặc giới hạn khu vực;
-- sử dụng thông tin đăng nhập, cookie, token hoặc phiên đã xác thực;
+- sử dụng thông tin đăng nhập, cookie, token hoặc phiên đã xác thực do bạn hoặc người dùng cuối khác cung cấp;
 - vượt DRM, tường phí, kiểm soát truy cập hoặc biện pháp bảo vệ công nghệ;
 - sao chép hoặc phân phối lại tài liệu khi chưa được phép;
 - vi phạm điều khoản áp dụng của nền tảng nguồn.
+
+Backend có thể dùng khóa API, thông tin xác thực ứng dụng hoặc token dịch vụ do Người vận hành kiểm soát cho các tích hợp đã được phê duyệt khi được phép. Điều này không cho phép người dùng cung cấp thông tin đăng nhập tài khoản cá nhân hoặc yêu cầu truy cập nội dung không công khai.
+
+Lệnh `/media` có thể hỗ trợ liên kết mạng xã hội công khai và URL ảnh hoặc GIF trực tiếp. Một số máy chủ bên thứ ba có thể chứa nội dung người lớn. Shoukaku không phải hệ thống xác minh độ tuổi và việc không có lệnh chuyên biệt về nội dung người lớn không bảo đảm mọi URL công khai do người dùng gửi đều phù hợp với mọi kênh hoặc đối tượng.
 
 Người vận hành không tuyên bố sở hữu nội dung của bên thứ ba và không bảo đảm tính chính xác, hợp pháp, an toàn, sẵn có hoặc khả năng truy cập liên tục của nội dung đó. Người vận hành có thể gỡ một nguồn hoặc tích hợp ngay khi có khiếu nại, thay đổi chính sách hoặc đánh giá rủi ro.
 
 Thông báo bản quyền được xử lý theo [IP_POLICY.md](IP_POLICY.md).
 
-## 7. Tính năng rủi ro cao đã bị vô hiệu hóa
+## 7. Danh mục lệnh và tính năng đã bị vô hiệu hóa
+
+[Danh mục lệnh đầy đủ](COMMANDS.md) liệt kê phần triển khai đang hoạt động, bị giới hạn và bị vô hiệu hóa để phân biệt hành vi hiện tại với tham chiếu lịch sử trong mã nguồn.
 
 Dịch vụ chính thức hiện không đăng ký `/nhentai`, `/rule34`, `/download` hoặc `/snipe`.
 
-Mã nguồn cũ, tham chiếu, kiểm thử hoặc thành phần nội bộ không tạo thành cam kết rằng tính năng đang khả dụng. Việc bật lại tính năng rủi ro cao phải được đánh giá rủi ro lại, có kiểm soát backend thích hợp và cập nhật tài liệu công khai trước khi đưa vào sử dụng.
+Mã nguồn, tham chiếu, kiểm thử, cấu trúc cơ sở dữ liệu, ảnh chụp cũ hoặc thành phần nội bộ không tạo thành cam kết rằng tính năng đang khả dụng. Việc một tệp triển khai còn tồn tại trong kho công khai không kích hoạt lệnh Discord tương ứng.
+
+Lệnh Discord đã triển khai trước đó có thể còn hiển thị cho đến khi danh mục lệnh ứng dụng hiện tại được ghi đè thành công. Một lệnh cũ vẫn hiển thị không đồng nghĩa chức năng backend của lệnh đang khả dụng.
+
+Việc bật lại tính năng rủi ro cao phải được đánh giá rủi ro lại, có kiểm soát backend thích hợp và cập nhật tài liệu công khai trước khi đưa vào sử dụng.
 
 ## 8. Quyền riêng tư và bảo mật
 
@@ -175,10 +188,8 @@ Trước khi khởi kiện, các bên nên thiện chí giải quyết tranh ch�
 
 - Hỗ trợ và báo cáo lạm dụng: https://discord.gg/qGwKsqH62k
 - Thông báo pháp lý, quyền riêng tư, bản quyền và bảo mật: **whittylord@gmail.com**
+- Chính sách Quyền riêng tư: [PP_VI.md](PP_VI.md)
+- Danh mục lệnh đầy đủ: [COMMANDS.md](COMMANDS.md)
 - Quy trình bản quyền: [IP_POLICY.md](IP_POLICY.md)
 - Quy trình bảo mật: [SECURITY.md](SECURITY.md)
 - Bản Điều khoản tiếng Anh: [TOS.md](TOS.md)
-
-Bản Điều khoản tiếng Việt chính thức:
-
-https://github.com/alG-N/ShoukakuDocs/blob/main/TOS_VI.md
