@@ -4,7 +4,7 @@
 **Ngày có hiệu lực:** 24 tháng 7 năm 2026  
 **Cập nhật lần cuối:** 24 tháng 7 năm 2026
 
-**Bản tiếng Anh:** [TOS.md](TOS.md)
+**Bản tiếng Anh:** [../EN/TOS.md](../EN/TOS.md)
 
 Điều khoản Dịch vụ này ("Điều khoản") điều chỉnh việc truy cập và sử dụng phiên bản Shoukaku Discord bot được vận hành chính thức ("Shoukaku", "Bot" hoặc "Dịch vụ").
 
@@ -192,4 +192,4 @@ Trước khi khởi kiện, các bên nên thiện chí giải quyết tranh ch�
 - Danh mục lệnh đầy đủ: [COMMANDS.md](COMMANDS.md)
 - Quy trình bản quyền: [IP_POLICY.md](IP_POLICY.md)
 - Quy trình bảo mật: [SECURITY.md](SECURITY.md)
-- Bản Điều khoản tiếng Anh: [TOS.md](TOS.md)
+- Bản Điều khoản tiếng Anh: [../EN/TOS.md](../EN/TOS.md)
