@@ -11,8 +11,10 @@ Shoukaku is a multi-purpose Discord bot focused on music, moderation, utility co
 - [Support Server](https://discord.gg/qGwKsqH62k)
 - [Service Status](https://altergolden.dev)
 - [Command Reference](COMMANDS.md)
-- [Privacy Policy](PP.md)
-- [Terms of Service](TOS.md)
+- [Privacy Policy — English](PP.md)
+- [Chính sách Quyền riêng tư — Tiếng Việt](PP_VI.md)
+- [Terms of Service — English](TOS.md)
+- [Điều khoản Dịch vụ — Tiếng Việt](TOS_VI.md)
 - [Copyright and IP Policy](IP_POLICY.md)
 - [Security Policy](SECURITY.md)
 - [FAQ](FAQ.md)
@@ -42,12 +44,16 @@ The public `/download`, `/nhentai`, `/rule34`, and `/snipe` commands are disable
 | [Command Reference](COMMANDS.md) | Public command categories and currently documented commands |
 | [Technology](TECHNOLOGY.md) | High-level tools, services, and architecture used by the project |
 | [FAQ](FAQ.md) | Common setup, usage, availability, privacy, and support questions |
-| [Privacy Policy](PP.md) | Information the official hosted service processes and how it is handled |
-| [Terms of Service](TOS.md) | Rules and conditions for using the official hosted service |
+| [Privacy Policy — English](PP.md) | Information the official hosted service processes and how it is handled |
+| [Chính sách Quyền riêng tư — Tiếng Việt](PP_VI.md) | Bản tiếng Việt về dữ liệu được xử lý, mục đích, thời gian lưu và quyền của người dùng |
+| [Terms of Service — English](TOS.md) | Rules and conditions for using the official hosted service |
+| [Điều khoản Dịch vụ — Tiếng Việt](TOS_VI.md) | Bản tiếng Việt về quy tắc và điều kiện sử dụng Dịch vụ chính thức |
 | [Copyright and IP Policy](IP_POLICY.md) | Copyright complaints, takedowns, counter-notices, and repeat infringement |
 | [Security Policy](SECURITY.md) | Private vulnerability-reporting process |
 | [Contributing](CONTRIBUTING.md) | Rules for documentation contributions |
 | [License](LICENSE) | Copyright status and permitted use of this repository |
+
+The English and Vietnamese legal documents are intended to express the same rules. If a language difference or ambiguity affects a user in Vietnam, the interpretation required by applicable law and mandatory consumer or data-subject protections controls.
 
 ## Repository Relationship
 
@@ -79,7 +85,7 @@ For the most current behavior:
 ## Privacy, Safety, and Reports
 
 - Shoukaku does not sell personal data.
-- The official service processes limited Discord identifiers, command inputs, moderation records, temporary service data, and technical logs as described in the [Privacy Policy](PP.md).
+- The official service processes limited Discord identifiers, command inputs, moderation records, temporary service data, and technical logs as described in the [Privacy Policy](PP.md) and [Chính sách Quyền riêng tư](PP_VI.md).
 - Risky public features are disabled unless and until the backend and documentation provide adequate controls.
 - Copyright complaints should follow [IP_POLICY.md](IP_POLICY.md).
 - Security vulnerabilities should follow [SECURITY.md](SECURITY.md).
