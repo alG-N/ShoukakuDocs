@@ -17,20 +17,22 @@ This page describes Shoukaku's technology at a public, high level. It intentiona
 
 | Technology | Role in Shoukaku |
 |---|---|
-| Lavalink | Audio playback and source handling |
+| Lavalink | Audio playback and approved source handling |
 | Shoukaku / lavalink-client | Application-side Lavalink connectivity and player management |
 
-Music availability depends on the configured Lavalink nodes and supported audio sources.
+Music availability depends on configured nodes and approved sources. The official service must not intentionally use credentials or technical measures to bypass private, paid, age, region, or DRM restrictions.
 
 ## Media Processing
 
 | Technology | Role in Shoukaku |
 |---|---|
-| Cobalt | Supported media retrieval and processing workflows |
-| yt-dlp | Provider-specific extraction and fallback media processing |
-| Media proxy services | Controlled delivery of supported media and public health/status routes |
+| Cobalt | Internal media retrieval and processing component |
+| yt-dlp | Provider-specific extraction component used only in approved workflows |
+| Media proxy services | Controlled delivery of temporary media and public health/status routes |
 
-Media commands may pass a user-provided URL or query to a required processing service. Supported platforms can change when third-party websites or APIs change.
+The public `/download` command is disabled. The remaining `/media` workflow is intended for supported public content and embed assistance only. Users must not submit account credentials, private links, paid content, restricted content, or DRM-protected material.
+
+Temporary source files used by the current media stack are configured for automatic cleanup, with the default source-file maximum age set to 1,800 seconds. Public-object retention, when enabled, must follow the configured lifecycle and the [Privacy Policy](PP.md).
 
 ## External Integrations
 
@@ -41,10 +43,9 @@ Shoukaku may integrate with services used for:
 - Pixiv content;
 - Steam information;
 - Wikipedia searches;
-- supported media and embed providers;
-- age-restricted content providers where enabled and permitted.
+- approved public media and embed providers.
 
-Each integration remains subject to the third party's availability, terms, rate limits, and content rules.
+Adult-content integrations are not registered in the official hosted service. Each enabled integration remains subject to the third party's availability, terms, rate limits, privacy practices, and content rules.
 
 ## Deployment and Infrastructure
 
@@ -57,7 +58,7 @@ Each integration remains subject to the third party's availability, terms, rate 
 
 The exact production topology is private and may change without being reflected in this public overview.
 
-## Reliability and Observability
+## Reliability, Logging, and Observability
 
 | Technology | Role in Shoukaku |
 |---|---|
@@ -67,7 +68,7 @@ The exact production topology is private and may change without being reflected 
 | Sentry | Optional error reporting and diagnostics |
 | Structured logging | Debugging, reliability, security, and abuse investigation |
 
-Public users do not receive access to protected operational dashboards, credentials, or detailed diagnostics.
+The Docker deployment uses bounded rotating container-log files for core services. Optional external observability providers may apply their own configured retention. Public users do not receive access to protected dashboards, credentials, or detailed diagnostics.
 
 ## Development Quality
 
@@ -91,9 +92,9 @@ Shoukaku command / handler
     |
     +--> PostgreSQL for durable data
     +--> Redis for shared temporary state
-    +--> Lavalink for music
-    +--> Media services for supported downloads
-    +--> Third-party APIs for requested content
+    +--> Lavalink for approved music sources
+    +--> Media services for approved temporary processing
+    +--> Third-party APIs for requested public information
     |
     v
 Response returned through Discord
@@ -106,7 +107,7 @@ Public documentation may describe:
 - user-facing commands;
 - high-level technologies;
 - general feature behavior;
-- Privacy Policy and Terms of Service;
+- privacy, terms, IP, and security policies;
 - support and status information.
 
 The following must remain private:
