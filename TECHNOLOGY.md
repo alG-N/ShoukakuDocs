@@ -1,6 +1,0 @@
-# TECHNOLOGY
-
-Choose a language / Chọn ngôn ngữ:
-
-- [EN — TECHNOLOGY AND ARCHITECTURE](EN/TECHNOLOGY.md)
-- [VI — CÔNG NGHỆ VÀ KIẾN TRÚC](VI/TECHNOLOGY.md)
