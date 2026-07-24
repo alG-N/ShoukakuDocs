@@ -4,7 +4,7 @@
 **Effective date:** July 24, 2026  
 **Last updated:** July 24, 2026
 
-**Vietnamese version:** [TOS_VI.md](TOS_VI.md)
+**Vietnamese version:** [../VI/TOS_VI.md](../VI/TOS_VI.md)
 
 These Terms of Service ("Terms") govern access to and use of the official hosted instance of the Shoukaku Discord bot ("Shoukaku", the "Bot", or the "Service").
 
@@ -192,4 +192,4 @@ Before filing a claim, the parties should attempt in good faith to resolve the d
 - Complete command inventory: [COMMANDS.md](COMMANDS.md)
 - Copyright procedure: [IP_POLICY.md](IP_POLICY.md)
 - Security procedure: [SECURITY.md](SECURITY.md)
-- Vietnamese Terms: [TOS_VI.md](TOS_VI.md)
+- Vietnamese Terms: [../VI/TOS_VI.md](../VI/TOS_VI.md)
