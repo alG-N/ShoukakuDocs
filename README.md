@@ -3,14 +3,14 @@
 Shoukaku is a multi-purpose Discord bot focused on music, moderation, utility commands, and selected third-party integrations.
 
 > **This repository is the public documentation hub for Shoukaku.**
-> The application source code, deployment configuration, credentials, and internal infrastructure are maintained separately.
+> The backend source is also publicly viewable in a separate repository, but credentials, private configuration, production data, protected monitoring access, and internal secrets must never be published.
 
 ## Quick Links
 
 - [Invite Shoukaku](https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=0&integration_type=0&scope=bot+applications.commands)
 - [Support Server](https://discord.gg/qGwKsqH62k)
 - [Service Status](https://altergolden.dev)
-- [Command Reference](COMMANDS.md)
+- [Complete Command Reference](COMMANDS.md)
 - [Privacy Policy — English](PP.md)
 - [Chính sách Quyền riêng tư — Tiếng Việt](PP_VI.md)
 - [Terms of Service — English](TOS.md)
@@ -29,21 +29,21 @@ The name is used as a historical reference. Shoukaku is not affiliated with, end
 
 | Area | Highlights |
 |---|---|
-| Music | Playback, queues, history, autoplay, loop, shuffle, and voice-channel controls |
+| Music | Playback, queues, seeking, preferences, favorites, history, autoplay, loop, shuffle, and voice-channel controls |
 | Moderation | Warnings, cases, mutes, kicks, bans, automoderation, anti-raid, and server protection |
 | Utility | AFK, avatar, role, user, and server information, reporting, and general tools |
-| Integrations | Anime, Reddit, Pixiv, Steam, Wikipedia, and other approved services |
+| Integrations | Anime, Reddit, Pixiv, Steam, Wikipedia, public media previews, and other approved services |
 | Entertainment | Fun and community-oriented commands |
 
-The public `/download`, `/nhentai`, `/rule34`, and `/snipe` commands are disabled while legal, privacy, and platform-policy controls are reviewed. Use `/help` in Discord for the current command list.
+The [complete command reference](COMMANDS.md) lists active, restricted, and disabled command implementations. The official hosted service currently does not register `/download`, `/nhentai`, `/rule34`, or `/snipe`.
 
 ## Documentation
 
 | Document | Purpose |
 |---|---|
-| [Command Reference](COMMANDS.md) | Public command categories and currently documented commands |
-| [Technology](TECHNOLOGY.md) | High-level tools, services, and architecture used by the project |
-| [FAQ](FAQ.md) | Common setup, usage, availability, privacy, and support questions |
+| [Complete Command Reference](COMMANDS.md) | Full inventory of active, restricted, and disabled command implementations |
+| [Technology](TECHNOLOGY.md) | High-level tools, services, storage, retention, and architecture used by the project |
+| [FAQ](FAQ.md) | Common setup, usage, availability, privacy, repository, and support questions |
 | [Privacy Policy — English](PP.md) | Information the official hosted service processes and how it is handled |
 | [Chính sách Quyền riêng tư — Tiếng Việt](PP_VI.md) | Bản tiếng Việt về dữ liệu được xử lý, mục đích, thời gian lưu và quyền của người dùng |
 | [Terms of Service — English](TOS.md) | Rules and conditions for using the official hosted service |
@@ -57,36 +57,39 @@ The English and Vietnamese legal documents are intended to express the same rule
 
 ## Repository Relationship
 
-Shoukaku is split into two repositories with different audiences:
+Shoukaku is split into two publicly viewable repositories with different purposes:
 
-| Repository | Visibility and purpose |
+| Repository | Purpose |
 |---|---|
-| [`alG-N/ShoukakuDocs`](https://github.com/alG-N/ShoukakuDocs) | Public, user-facing documentation and the canonical Privacy Policy and Terms of Service |
-| [`alG-N/ShoukakuBot`](https://github.com/alG-N/ShoukakuBot) | Backend implementation and operational documentation intended for maintainers and approved collaborators |
+| [`alG-N/ShoukakuDocs`](https://github.com/alG-N/ShoukakuDocs) | Public user documentation and the canonical Privacy Policy and Terms of Service |
+| [`alG-N/ShoukakuBot`](https://github.com/alG-N/ShoukakuBot) | Backend implementation, tests, deployment assets, and maintainer documentation |
 
-The public documentation must not contain credentials, private configuration, internal monitoring access details, or secrets from the backend repository.
+Public visibility does not itself grant an open-source license. Use of code and documentation remains governed by the license or copyright notice in the relevant repository.
+
+Neither repository should contain live credentials, private configuration, production personal data, database exports, private logs, protected dashboard access, or secrets.
 
 ## Technology Overview
 
 Shoukaku is built primarily with TypeScript and Node.js. The hosted stack uses Discord.js, PostgreSQL, Redis, Lavalink, Docker, selected media-processing components, and optional observability tools.
 
-See [TECHNOLOGY.md](TECHNOLOGY.md) for a high-level breakdown. That document intentionally describes technologies without publishing sensitive deployment details.
+See [TECHNOLOGY.md](TECHNOLOGY.md) for a high-level breakdown. It describes relevant technologies and retention behavior without publishing credentials or protected production access details.
 
 ## Availability and Changes
 
 Shoukaku is an actively developed service. Commands, integrations, limits, and availability may change as Discord, third-party APIs, laws, and project requirements evolve.
 
-For the most current behavior:
+For current active behavior:
 
 1. Use `/help` in Discord.
 2. Check the [support server](https://discord.gg/qGwKsqH62k).
 3. Check the [status page](https://altergolden.dev).
+4. Use [COMMANDS.md](COMMANDS.md) when you also need the complete inventory of disabled implementations.
 
 ## Privacy, Safety, and Reports
 
 - Shoukaku does not sell personal data.
-- The official service processes limited Discord identifiers, command inputs, moderation records, temporary service data, and technical logs as described in the [Privacy Policy](PP.md) and [Chính sách Quyền riêng tư](PP_VI.md).
-- Risky public features are disabled unless and until the backend and documentation provide adequate controls.
+- The official service may process Discord identifiers, server configuration, moderation records, command inputs, music preferences, favorites, listening history, temporary media data, media-mapping metadata, security signals, and technical logs as described in the [Privacy Policy](PP.md) and [Chính sách Quyền riêng tư](PP_VI.md).
+- Dedicated adult-content commands and deleted-message collection remain disabled in the official hosted service.
 - Copyright complaints should follow [IP_POLICY.md](IP_POLICY.md).
 - Security vulnerabilities should follow [SECURITY.md](SECURITY.md).
 - Privacy, legal, copyright, and security notices may be sent to **whittylord@gmail.com**.
@@ -99,7 +102,7 @@ The official invite link requests no preselected Discord permissions. A server a
 
 ## Documentation Contributions
 
-Corrections and improvements to public documentation are welcome under [CONTRIBUTING.md](CONTRIBUTING.md). Keep submissions limited to public information and do not copy secrets or private infrastructure details from the backend repository.
+Corrections and improvements to public documentation are welcome under [CONTRIBUTING.md](CONTRIBUTING.md). Keep submissions limited to information suitable for public release and do not include secrets, private data, or protected infrastructure access details.
 
 ## Rights and Trademarks
 
