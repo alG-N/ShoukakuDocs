@@ -1,16 +1,22 @@
 # Terms of Service
 
-**Version:** 2.0  
+**Version:** 2.1  
 **Effective date:** July 24, 2026  
 **Last updated:** July 24, 2026
 
+**Vietnamese version:** [TOS_VI.md](TOS_VI.md)
+
 These Terms of Service ("Terms") govern access to and use of the official hosted instance of the Shoukaku Discord bot ("Shoukaku", the "Bot", or the "Service").
 
-The Service is operated by **alterGolden**, an individual software developer based in Vietnam (the "Operator"). Legal notices may be sent to **whittylord@gmail.com**.
+The Service is operated by an individual software developer residing in Vietnam under the public project name **alterGolden** (the "Operator"). Legal notices may be sent to **whittylord@gmail.com**. The Operator's verified legal identity may be provided where required by applicable law or a valid legal process; this document does not publish a residential address.
 
 By inviting, configuring, authorizing, accessing, or using Shoukaku, you confirm that you have read and agree to these Terms and the [Privacy Policy](PP.md). If you act for a Discord server or organization, you represent that you are authorized to accept these Terms for it. If you do not agree, do not use the Service.
 
 These Terms apply only to the official hosted Service. Forks, copies, and independently hosted deployments are operated separately.
+
+## Language and interpretation
+
+The English and Vietnamese versions are intended to express the same rules. For users in Vietnam, the Vietnamese version is provided for accessibility and compliance purposes. If the versions differ, the interpretation required by applicable law controls. Where Vietnamese consumer law applies, any ambiguity or language difference will be handled in the manner more favorable to the consumer to the extent required by law.
 
 ## 1. Eligibility and Platform Rules
 
@@ -28,6 +34,8 @@ The official Service does not register public adult-content commands.
 Subject to these Terms, the Operator grants you a limited, revocable, non-exclusive, non-transferable permission to use the official Service for its intended Discord features.
 
 No ownership or license is granted in the Bot's source code, branding, documentation, infrastructure, or proprietary systems except as expressly stated in [LICENSE](LICENSE).
+
+Unless the Operator expressly announces a paid plan, the official Service is provided without charge. A future paid or commercial offering may require additional terms, pricing disclosures, invoicing information, and consumer-protection notices before it becomes available.
 
 ## 3. Acceptable Use
 
@@ -64,7 +72,7 @@ Administrator permission is not required by the official invite link and should 
 
 You are responsible for links, search terms, reports, moderation reasons, and other content or instructions you submit.
 
-You grant the Service permission to process submitted content only as needed to provide the requested feature, secure the Service, provide support, enforce these Terms, and comply with law as described in the Privacy Policy.
+You authorize the Service to process submitted content only as needed to provide the requested feature, secure the Service, provide support, enforce these Terms, and comply with law as described in the Privacy Policy. Where applicable law requires consent for a particular processing activity, the Service must obtain that consent or keep the activity disabled.
 
 You represent that you have the rights and authority required to submit the content and request the action.
 
@@ -96,6 +104,8 @@ Use of Shoukaku is governed by the [Privacy Policy](PP.md). Security issues must
 
 Do not submit secrets or sensitive personal information through ordinary Discord commands.
 
+For processing subject to Vietnamese law, the Service is intended to operate consistently with applicable requirements, including the Law on Personal Data Protection No. 91/2025/QH15 and its implementing rules. This statement is not a representation that every regulatory filing, assessment, or record is automatically complete; operational compliance must be verified before affected processing is enabled.
+
 ## 9. Service Availability and Changes
 
 The Service is provided on an **"as is"** and **"as available"** basis. The Operator may add, remove, suspend, limit, or modify commands, providers, limits, and the Service itself, including without prior notice where necessary for security, law, platform compliance, or operations.
@@ -124,7 +134,7 @@ To the maximum extent permitted by applicable law, the Service is provided witho
 
 The Operator does not warrant that moderation results, media results, search results, third-party content, or automated decisions will always be correct or complete.
 
-Nothing in these Terms excludes warranties or rights that cannot lawfully be excluded.
+Nothing in these Terms excludes warranties, remedies, or rights that cannot lawfully be excluded.
 
 ## 13. Limitation of Liability
 
@@ -135,29 +145,29 @@ Where liability cannot lawfully be excluded, the aggregate liability arising fro
 1. the amount you paid directly to the Operator for the Service during the 12 months before the event giving rise to liability; or
 2. VND 1,000,000.
 
-This limitation does not apply where prohibited by law, including liability that cannot be limited for fraud, intentional misconduct, or mandatory consumer rights.
+The exclusions and cap above do not apply to the extent prohibited by applicable law. They do not limit liability that cannot legally be limited, including liability for fraud, intentional misconduct, or mandatory consumer rights. For a consumer in Vietnam, this section must not be interpreted as requiring the consumer to waive a mandatory remedy or as excluding a responsibility that Vietnamese law does not permit the Operator to exclude.
 
-## 14. Indemnity
+## 14. User Responsibility for Unlawful Use
 
-To the extent permitted by law, you are responsible for losses, claims, or costs resulting from your unlawful use of the Service, your content, or your violation of these Terms. This section does not require a consumer to waive mandatory legal protections.
+To the extent permitted by law, you are responsible for direct losses or claims caused by your unlawful use of the Service, your unlawful content, or your material violation of these Terms. This section does not require a consumer to indemnify the Operator for the Operator's own fault or to waive mandatory legal protections.
 
 ## 15. Changes to These Terms
 
 The current version and effective date will be published in this repository. Material changes will be announced through an appropriate project channel where reasonably practical.
 
-Changes required for security, law, or platform compliance may take effect immediately. Other material changes will state their effective date. Continued use after the effective date constitutes acceptance where permitted by law.
+Changes required for security, law, or platform compliance may take effect immediately. Other material changes will state their effective date. Continued use after the effective date constitutes acceptance only where permitted by applicable law. Where consent or a fresh affirmative agreement is legally required, continued use alone will not replace it.
 
 ## 16. Governing Law and Disputes
 
 These Terms are governed by the laws of Vietnam, without excluding mandatory protections that apply under the law of a user's country of residence.
 
-Before filing a claim, the parties should attempt in good faith to resolve the dispute by email. Unless mandatory law provides otherwise, disputes will be submitted to the competent courts of Vietnam.
+Before filing a claim, the parties should attempt in good faith to resolve the dispute by email. Unless mandatory law provides otherwise, disputes will be submitted to the competent courts of Vietnam. Nothing in this section prevents a consumer from using a competent complaint, mediation, arbitration, administrative, or court mechanism that cannot lawfully be excluded.
 
 ## 17. General Terms
 
 - **Severability:** If part of these Terms is unenforceable, the remaining provisions remain effective.
 - **No waiver:** Failure to enforce a provision is not a waiver of it.
-- **Assignment:** You may not assign these Terms without the Operator's consent. The Operator may assign them as part of a lawful transfer of the Service.
+- **Assignment:** You may not assign these Terms without the Operator's consent. The Operator may assign them as part of a lawful transfer of the Service with any notice or consent required by law.
 - **Entire agreement:** These Terms, the Privacy Policy, and incorporated policies form the entire agreement for the official Service.
 - **Order of precedence:** Mandatory law controls where it conflicts with these Terms.
 
@@ -167,6 +177,7 @@ Before filing a claim, the parties should attempt in good faith to resolve the d
 - Legal, privacy, copyright, and security notices: **whittylord@gmail.com**
 - Copyright procedure: [IP_POLICY.md](IP_POLICY.md)
 - Security procedure: [SECURITY.md](SECURITY.md)
+- Vietnamese Terms: [TOS_VI.md](TOS_VI.md)
 
 Canonical public Terms:
 
