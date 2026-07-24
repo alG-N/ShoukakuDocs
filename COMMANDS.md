@@ -1,54 +1,51 @@
 # Command Reference
 
-This page provides a public overview of Shoukaku's command surface.
+This page provides a public inventory of Shoukaku's user-facing command surface, including commands that are currently active, restricted, or disabled.
 
-> Use `/help` inside Discord for the most current command names, options, permissions, and availability. Commands may change as the bot is updated.
+> Use `/help` inside Discord for the most current active command names, options, permissions, and availability. This document also records disabled commands so that historical source files, screenshots, or old command registrations can be understood correctly.
 
-## Temporarily Disabled Commands
+## Status meanings
 
-The official hosted service currently does not register the following public commands:
-
-- `/nhentai`
-- `/rule34`
-- `/download`
-- `/snipe`
-
-They are disabled while legal, privacy, copyright, retention, and platform-policy controls are reviewed. Their presence in historical source code or documentation does not mean that they are available in the official hosted service.
+| Status | Meaning |
+|---|---|
+| **Active** | Registered by the current backend and intended for normal use, subject to permissions and configuration |
+| **Restricted** | Registered, but limited to the bot owner, support server, administrators, specific channels, or other access rules |
+| **Disabled** | Retained only as historical or implementation code and not registered by the official hosted service |
 
 ## General and Utility
 
-| Command | Purpose |
-|---|---|
-| `/afk` | Manage AFK status |
-| `/avatar` | Display a user's avatar |
-| `/display` | Display supported user or profile information |
-| `/help` | Open the current in-bot help menu |
-| `/invite` | Show the least-privilege bot invite link |
-| `/ping` | Check bot responsiveness |
-| `/report` | Submit a report through configured server or project channels |
-| `/roleinfo` | Display information about a Discord role |
-| `/serverinfo` | Display information about the current server |
+| Command | Purpose | Status |
+|---|---|---|
+| `/afk` | Manage AFK status | Active |
+| `/avatar` | Display a user's avatar | Active |
+| `/display` | Display supported user or profile information | Active |
+| `/help` | Browse the current in-bot command registry and exact usage | Active |
+| `/invite` | Show the least-privilege bot invite link | Active |
+| `/ping` | Check bot responsiveness | Active |
+| `/report` | Submit a report through configured server or project channels | Active |
+| `/roleinfo` | Display information about a Discord role | Active |
+| `/serverinfo` | Display information about the current server | Active |
 
 ## Moderation and Server Safety
 
 Moderation commands require the relevant Discord permissions and may be affected by role hierarchy or server configuration.
 
-| Command | Purpose |
-|---|---|
-| `/automod` | Configure or manage automated moderation |
-| `/ban` | Ban a member where permitted |
-| `/case` | View a moderation case |
-| `/clearwarns` | Clear supported warning records |
-| `/delete` | Delete supported messages |
-| `/delwarn` | Delete a warning record |
-| `/kick` | Kick a member where permitted |
-| `/lockdown` | Restrict channel or server activity during an incident |
-| `/mute` | Temporarily restrict a member where permitted |
-| `/raid` | Access anti-raid or raid-response tools |
-| `/setting` | Configure supported server settings |
-| `/slowmode` | Configure channel slowmode |
-| `/warn` | Create a warning record |
-| `/warnings` | View warning records |
+| Command | Purpose | Status |
+|---|---|---|
+| `/automod` | Configure or manage automated moderation | Restricted |
+| `/ban` | Ban a member where permitted | Restricted |
+| `/case` | View a moderation case | Restricted |
+| `/clearwarns` | Clear supported warning records | Restricted |
+| `/delete` | Delete supported messages | Restricted |
+| `/delwarn` | Delete a warning record | Restricted |
+| `/kick` | Kick a member where permitted | Restricted |
+| `/lockdown` | Restrict channel or server activity during an incident | Restricted |
+| `/mute` | Temporarily restrict a member where permitted | Restricted |
+| `/raid` | Access anti-raid or raid-response tools | Restricted |
+| `/setting` | Configure supported server settings | Restricted |
+| `/slowmode` | Configure channel slowmode | Restricted |
+| `/warn` | Create a warning record | Restricted |
+| `/warnings` | View warning records | Restricted |
 
 Server administrators remain responsible for reviewing moderation actions, configuring permissions, informing members where required, and following Discord rules and applicable law.
 
@@ -56,52 +53,68 @@ Server administrators remain responsible for reviewing moderation actions, confi
 
 Shoukaku exposes music features through `/music` and its subcommands.
 
-| Subcommand | Purpose |
-|---|---|
-| `play` | Search for or play a track from an approved source |
-| `stop` | Stop playback and end the current session |
-| `skip` | Skip the current track |
-| `pause` | Pause or resume playback |
-| `queue` | View the current queue |
-| `nowplaying` | View the current track |
-| `volume` | Adjust playback volume |
-| `loop` | Configure looping behavior |
-| `shuffle` | Shuffle the queue |
-| `remove` | Remove a queued track |
-| `move` | Move a track within the queue |
-| `clear` | Clear the queue |
-| `history` | View supported playback history |
-| `autoplay` | Configure autoplay behavior |
+| Subcommand | Purpose | Status |
+|---|---|---|
+| `play` | Search for or play a song or playlist from an approved source | Active |
+| `stop` | Stop playback and clear the current queue | Active |
+| `skip` | Skip the current track | Active |
+| `pause` | Pause or resume playback | Active |
+| `queue` | View the current queue | Active |
+| `nowplaying` | View the current track | Active |
+| `volume` | Adjust playback volume | Active |
+| `loop` | Configure track or queue looping | Active |
+| `shuffle` | Toggle queue shuffle | Active |
+| `remove` | Remove a queued track | Active |
+| `move` | Move a track within the queue | Active |
+| `clear` | Clear queued tracks while keeping the current track | Active |
+| `seek` | Seek to a position in the current track | Active |
+| `history` | View supported listening history | Active |
+| `autoplay` | Configure autoplay behavior | Active |
 
-Music must not be used to access private, paid, age-restricted, region-restricted, or DRM-protected material, or in a way that violates a source's terms or a rights holder's permission.
+Music must not be used to access private, paid, subscriber-only, age-restricted, region-restricted, or DRM-protected material, or in a way that violates a source's terms or a rights holder's permission.
 
 ## Approved External Services
 
-| Command | Purpose |
-|---|---|
-| `/anime` | Search supported anime information sources |
-| `/media` | Retrieve or repair supported public media embeds |
-| `/pixiv` | Retrieve supported Pixiv information or media |
-| `/reddit` | Retrieve supported Reddit content |
-| `/steam` | Retrieve supported Steam information |
-| `/wikipedia` | Search Wikipedia content |
+| Command | Purpose | Status |
+|---|---|---|
+| `/anime` | Search supported anime information sources | Active |
+| `/media` | Repair supported social embeds, display supported direct images or GIFs, and prepare supported public media previews | Active |
+| `/pixiv` | Retrieve supported Pixiv information or media | Active |
+| `/reddit` | Retrieve supported Reddit content | Active |
+| `/steam` | Retrieve supported Steam information | Active |
+| `/wikipedia` | Search Wikipedia content | Active |
 
 External-service commands depend on third-party APIs and may be unavailable, restricted, or removed. Users must not provide account passwords, session cookies, access tokens, or URLs to private, paid, restricted, or DRM-protected content.
 
+Some third-party image hosts can contain mature material even though Shoukaku does not provide dedicated adult-content commands. Users and server administrators must not use `/media` to expose minors to adult content, evade channel restrictions, or violate Discord rules. The Operator may block a host or request without notice where necessary for safety, law, platform policy, or copyright compliance.
+
 ## Entertainment
 
-| Command | Purpose |
-|---|---|
-| `/deathbattle` | Run the supported entertainment interaction |
-| `/say` | Send supported bot-formatted text where permitted |
+| Command | Purpose | Status |
+|---|---|---|
+| `/deathbattle` | Run the supported entertainment interaction | Active |
+| `/say` | Send supported bot-formatted text where permitted | Active |
 
 ## Owner-only Operations
 
-| Command | Purpose |
-|---|---|
-| `/botcheck` | View restricted operational diagnostics available to the bot owner |
+| Command | Purpose | Status |
+|---|---|---|
+| `/botcheck` | View restricted operational diagnostics available to the bot owner | Restricted |
 
-Owner-only commands and internal diagnostics are not available to normal users.
+Owner-only commands are deployed separately to the configured support server and are not available to normal users.
+
+## Disabled Command Implementations
+
+The following commands are included in this complete inventory because implementation files, tests, database structures, or old screenshots may still refer to them. They are not exported by the current command registry and are not intended to be available in the official hosted service.
+
+| Command | Historical purpose | Status |
+|---|---|---|
+| `/download` | Download, convert, or prepare media as a Discord attachment | Disabled |
+| `/snipe` | Display recently deleted messages collected for a server | Disabled |
+| `/nhentai` | Search or retrieve adult-oriented doujin content | Disabled |
+| `/rule34` | Search or retrieve adult-oriented image content | Disabled |
+
+Keeping implementation code in the repository does not activate a command. Previously deployed Discord commands disappear only after the official application command registry is successfully overwritten by a current deployment.
 
 ## Permissions and Errors
 
@@ -113,7 +126,7 @@ A command may fail when:
 - a third-party service is unavailable;
 - the user is rate-limited;
 - the provided URL, query, or content is unsupported or restricted;
-- a legal, safety, copyright, or privacy control blocks the request.
+- a legal, safety, copyright, privacy, or platform control blocks the request.
 
 For help, use `/help` or visit the official support server:
 
