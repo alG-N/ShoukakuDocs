@@ -9,7 +9,7 @@ Shoukaku is a multi-purpose Discord bot focused on music, moderation, utility co
 
 ## Quick Links
 
-- [Invite Shoukaku](https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=0&integration_type=0&scope=bot+applications.commands)
+- [Invite Shoukaku](https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=8&integration_type=0&scope=bot+applications.commands)
 - [Support Server](https://discord.gg/qGwKsqH62k)
 - [Service Status](https://altergolden.dev)
 - [Complete Command Reference](COMMANDS.md)
@@ -33,10 +33,10 @@ The name is used as a historical reference. Shoukaku is not affiliated with, end
 | Music | Playback, queues, seeking, preferences, favorites, history, autoplay, loop, shuffle, and voice-channel controls |
 | Moderation | Warnings, cases, mutes, kicks, bans, automoderation, anti-raid, and server protection |
 | Utility | AFK, avatar, role, user, and server information, reporting, and general tools |
-| Integrations | Anime, Reddit, Pixiv, Steam, Wikipedia, public media previews, and other approved services |
+| Integrations | Anime, Reddit, Pixiv, Steam, Wikipedia, supported public media downloads and previews, and other approved services |
 | Entertainment | Fun and community-oriented commands |
 
-The [complete command reference](COMMANDS.md) lists active, restricted, and disabled command implementations. The official hosted service currently does not register `/download`, `/nhentai`, `/rule34`, or `/snipe`.
+The [complete command reference](COMMANDS.md) lists active, restricted, and disabled command implementations. The official hosted deployment enables `/download` through `DOWNLOAD_COMMAND_ENABLED`. Dedicated adult-content commands (`/nhentai` and `/rule34`) and `/snipe` remain disabled.
 
 ## Documentation
 
@@ -88,6 +88,7 @@ For current active behavior:
 
 - Shoukaku does not sell personal data.
 - The official service may process Discord identifiers, server configuration, moderation records, command inputs, music preferences, favorites, listening history, temporary media data, media-mapping metadata, security signals, and technical logs as described in the [Privacy Policy](PP.md).
+- `/download` is limited to supported public media that the user owns, has permission to use, or may use under applicable law. Local source files default to a maximum age of 1,800 seconds; temporary public R2 objects, when enabled, target a maximum of 86,400 seconds.
 - Dedicated adult-content commands and deleted-message collection remain disabled in the official hosted service.
 - Copyright complaints should follow [IP_POLICY.md](IP_POLICY.md).
 - Security vulnerabilities should follow [SECURITY.md](SECURITY.md).
@@ -97,7 +98,7 @@ Do not publish vulnerabilities, tokens, credentials, personal data, copyrighted 
 
 ## Permissions
 
-The official invite link requests no preselected Discord permissions. A server administrator should grant only the permissions required for the features they enable. Administrator permission is not required as a default installation permission.
+The official invite link requests Discord's **Administrator** permission. This is broad access: invite Shoukaku only to a server you own or are explicitly authorized to administer, and review the requested access before confirming the installation.
 
 ## Documentation Contributions
 
