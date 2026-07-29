@@ -9,7 +9,7 @@ Shoukaku là bot Discord đa chức năng, tập trung vào âm nhạc, kiểm d
 
 ## Liên kết nhanh
 
-- [Mời Shoukaku](https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=0&integration_type=0&scope=bot+applications.commands)
+- [Mời Shoukaku](https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=8&integration_type=0&scope=bot+applications.commands)
 - [Máy chủ hỗ trợ](https://discord.gg/qGwKsqH62k)
 - [Trạng thái Dịch vụ](https://altergolden.dev)
 - [Danh mục lệnh đầy đủ](COMMANDS.md)
@@ -33,10 +33,10 @@ Tên Shoukaku được sử dụng như một tham chiếu lịch sử. Shoukaku
 | Âm nhạc | Phát nhạc, hàng đợi, tua, tùy chọn, mục yêu thích, lịch sử, autoplay, lặp, trộn và điều khiển kênh thoại |
 | Kiểm duyệt | Cảnh cáo, vụ việc, mute, kick, ban, tự động kiểm duyệt, chống raid và bảo vệ máy chủ |
 | Tiện ích | AFK, avatar, thông tin vai trò, người dùng, máy chủ, báo cáo và công cụ chung |
-| Tích hợp | Anime, Reddit, Pixiv, Steam, Wikipedia, preview phương tiện công khai và dịch vụ được phê duyệt khác |
+| Tích hợp | Anime, Reddit, Pixiv, Steam, Wikipedia, tải xuống và preview phương tiện công khai được hỗ trợ cùng các dịch vụ được phê duyệt khác |
 | Giải trí | Lệnh vui và hoạt động cộng đồng |
 
-[Danh mục lệnh đầy đủ](COMMANDS.md) liệt kê các phần triển khai đang hoạt động, bị giới hạn và đã bị vô hiệu hóa. Dịch vụ chính thức hiện không đăng ký `/download`, `/nhentai`, `/rule34` hoặc `/snipe`.
+[Danh mục lệnh đầy đủ](COMMANDS.md) liệt kê các phần triển khai đang hoạt động, bị giới hạn và đã bị vô hiệu hóa. Bản triển khai chính thức bật `/download` qua `DOWNLOAD_COMMAND_ENABLED`. Các lệnh chuyên biệt về nội dung người lớn (`/nhentai` và `/rule34`) cùng `/snipe` vẫn bị vô hiệu hóa.
 
 ## Tài liệu
 
@@ -88,6 +88,7 @@ Shoukaku đang được phát triển tích cực. Lệnh, tích hợp, hạn m�
 
 - Shoukaku không bán dữ liệu cá nhân.
 - Dịch vụ chính thức có thể xử lý định danh Discord, cấu hình máy chủ, hồ sơ kiểm duyệt, dữ liệu nhập vào lệnh, tùy chọn âm nhạc, mục yêu thích, lịch sử nghe, dữ liệu phương tiện tạm thời, metadata ánh xạ phương tiện, tín hiệu bảo mật và nhật ký kỹ thuật như mô tả trong [Chính sách Quyền riêng tư](PP_VI.md).
+- `/download` chỉ dành cho phương tiện công khai được hỗ trợ mà người dùng sở hữu, được phép sử dụng hoặc được pháp luật áp dụng cho phép sử dụng. Tệp nguồn cục bộ mặc định có tuổi tối đa 1.800 giây; đối tượng R2 công khai tạm thời, khi bật, hướng tới tối đa 86.400 giây.
 - Lệnh chuyên biệt về nội dung người lớn và việc thu thập tin nhắn đã xóa vẫn bị tắt trong Dịch vụ chính thức.
 - Khiếu nại bản quyền phải tuân theo [IP_POLICY.md](IP_POLICY.md).
 - Lỗ hổng bảo mật phải được báo cáo theo [SECURITY.md](SECURITY.md).
@@ -97,7 +98,7 @@ Không công bố lỗ hổng, token, thông tin xác thực, dữ liệu cá nh
 
 ## Quyền Discord
 
-Liên kết mời chính thức không chọn trước bất kỳ quyền máy chủ Discord nào. Quản trị viên chỉ nên cấp quyền cần thiết cho tính năng được bật. Quyền Administrator không phải quyền mặc định bắt buộc.
+Liên kết mời chính thức yêu cầu quyền **Administrator** của Discord. Đây là quyền truy cập rộng: chỉ mời Shoukaku vào máy chủ bạn sở hữu hoặc được ủy quyền rõ ràng để quản trị, đồng thời rà soát quyền được yêu cầu trước khi xác nhận cài đặt.
 
 ## Đóng góp tài liệu
 

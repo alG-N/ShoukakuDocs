@@ -40,10 +40,14 @@ Toàn bộ tài liệu chi tiết được duy trì trong `EN/` và `VI/`. Thư 
 
 ## PROJECT LINKS / LIÊN KẾT DỰ ÁN
 
-- [INVITE SHOUKAKU](https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=0&integration_type=0&scope=bot+applications.commands)
+- [INVITE SHOUKAKU](https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=8&integration_type=0&scope=bot+applications.commands)
 - [SUPPORT SERVER](https://discord.gg/qGwKsqH62k)
 - [SERVICE STATUS](https://altergolden.dev)
 - [BACKEND REPOSITORY](https://github.com/alG-N/ShoukakuBot)
+
+The official invite requests Discord's **Administrator** permission. Invite the Bot only to a server you own or are authorized to administer. The official hosted service enables `/download` through its deployment feature flag for supported public media; `/snipe`, `/nhentai`, and `/rule34` remain disabled.
+
+Liên kết mời chính thức yêu cầu quyền **Administrator** của Discord. Chỉ mời Bot vào máy chủ bạn sở hữu hoặc được ủy quyền quản trị. Dịch vụ chính thức bật `/download` qua cờ tính năng triển khai cho phương tiện công khai được hỗ trợ; `/snipe`, `/nhentai` và `/rule34` vẫn bị vô hiệu hóa.
 
 ## LANGUAGE NOTE / LƯU Ý NGÔN NGỮ
 

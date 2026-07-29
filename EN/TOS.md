@@ -1,8 +1,8 @@
 # Terms of Service
 
-**Version:** 2.2  
-**Effective date:** July 24, 2026  
-**Last updated:** July 24, 2026
+**Version:** 2.3<br>
+**Effective date:** July 29, 2026<br>
+**Last updated:** July 29, 2026
 
 **Vietnamese version:** [../VI/TOS_VI.md](../VI/TOS_VI.md)
 
@@ -69,7 +69,7 @@ Server owners and administrators are responsible for:
 - responding to member complaints and deletion requests involving server-controlled records;
 - applying appropriate channel restrictions where third-party content may be mature or sensitive.
 
-Administrator permission is not required by the official invite link and should not be granted merely for convenience.
+The official invite link requests Discord's **Administrator** permission. This is broad access. You must invite the Bot only to a server you own or are authorized to administer and must review the requested access before confirming installation.
 
 ## 5. User Content and Instructions
 
@@ -83,7 +83,7 @@ You represent that you have the rights and authority required to submit the cont
 
 Shoukaku may search, link to, transform, transmit, or temporarily process content from approved third-party services.
 
-The public `/download` command is disabled. Remaining music and media features are for supported public content and lawful uses. You must not ask the Service to:
+The official hosted deployment enables `/download` through `DOWNLOAD_COMMAND_ENABLED`. Music and media features are only for supported public content that you own, have permission to use, or may use under applicable law. You must not ask the Service to:
 
 - access private, paid, subscriber-only, age-restricted, or region-restricted content;
 - use credentials, cookies, tokens, or authenticated sessions supplied by you or another end user;
@@ -95,6 +95,8 @@ The backend may use Operator-controlled API keys, application credentials, or se
 
 The `/media` command may support public social links and direct image or GIF URLs. Some third-party hosts can contain mature material. Shoukaku is not an age-verification system, and the absence of dedicated adult-content commands does not guarantee that every user-submitted public URL is suitable for every channel or audience.
 
+Downloaded source files used for processing default to a maximum local age of 1,800 seconds. Temporary public R2 objects, when enabled, target a maximum of 86,400 seconds.
+
 The Operator does not claim ownership of third-party content and does not guarantee its accuracy, legality, safety, availability, or continued accessibility. The Operator may remove a source or integration immediately following a complaint, policy change, or risk assessment.
 
 Copyright notices are handled under [IP_POLICY.md](IP_POLICY.md).
@@ -103,7 +105,7 @@ Copyright notices are handled under [IP_POLICY.md](IP_POLICY.md).
 
 The [complete command reference](COMMANDS.md) lists active, restricted, and disabled implementations so that current behavior and historical source references can be distinguished.
 
-The official Service currently does not register `/nhentai`, `/rule34`, `/download`, or `/snipe`.
+The official Service currently does not register `/nhentai`, `/rule34`, or `/snipe`. `/download` is registered when its deployment feature flag is enabled and is enabled in the current official hosted deployment.
 
 Historical source code, references, tests, database structures, screenshots, or internal components do not create a promise that a feature is available. Keeping an implementation file in a public repository does not activate the corresponding Discord command.
 
