@@ -48,7 +48,7 @@ Music availability depends on configured nodes and approved sources. The officia
 | Redis media store | Stable media identifiers and short-lived YouTube source mappings |
 | Cloudflare R2 | Optional temporary public-object delivery for generated previews |
 
-The public `/download` command is disabled. The remaining `/media` workflow supports selected social embed repairs, direct public image or GIF links, and supported public media previews. Users must not submit account credentials, private links, paid content, restricted content, or DRM-protected material.
+The official hosted deployment enables `/download` through `DOWNLOAD_COMMAND_ENABLED`. `/download` is limited to supported public media that the user owns, has permission to use, or may use under applicable law. The `/media` workflow supports selected social embed repairs, direct public image or GIF links, and supported public media previews. Users must not submit account credentials, private links, paid content, restricted content, or DRM-protected material.
 
 Some supported third-party image hosts can contain mature material. The official service does not register dedicated adult-content commands, but server administrators and users remain responsible for appropriate channel use and compliance with Discord rules.
 
