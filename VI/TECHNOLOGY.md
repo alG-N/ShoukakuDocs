@@ -48,7 +48,7 @@ Tính sẵn sàng phụ thuộc node và nguồn được cấu hình. Dịch v�
 | Redis media store | Định danh phương tiện ổn định và ánh xạ nguồn YouTube ngắn hạn |
 | Cloudflare R2 | Phân phối đối tượng công khai tạm thời cho preview được tạo, khi bật |
 
-Lệnh công khai `/download` bị vô hiệu hóa. Quy trình `/media` còn lại hỗ trợ sửa embed mạng xã hội được chọn, URL ảnh hoặc GIF công khai trực tiếp và preview phương tiện công khai được hỗ trợ. Người dùng không được gửi thông tin xác thực tài khoản, liên kết riêng tư, nội dung trả phí, bị giới hạn hoặc được bảo vệ bằng DRM.
+Bản triển khai chính thức bật `/download` qua `DOWNLOAD_COMMAND_ENABLED`. `/download` chỉ dành cho phương tiện công khai được hỗ trợ mà người dùng sở hữu, được phép sử dụng hoặc được pháp luật áp dụng cho phép sử dụng. Quy trình `/media` hỗ trợ sửa embed mạng xã hội được chọn, URL ảnh hoặc GIF công khai trực tiếp và preview phương tiện công khai được hỗ trợ. Người dùng không được gửi thông tin xác thực tài khoản, liên kết riêng tư, nội dung trả phí, bị giới hạn hoặc được bảo vệ bằng DRM.
 
 Một số máy chủ ảnh bên thứ ba có thể chứa nội dung trưởng thành. Dịch vụ chính thức không đăng ký lệnh chuyên biệt về nội dung người lớn, nhưng quản trị viên và người dùng vẫn chịu trách nhiệm về kênh phù hợp và quy định Discord.
 
