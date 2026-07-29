@@ -20,7 +20,7 @@ This page provides a public inventory of Shoukaku's user-facing command surface,
 | `/avatar` | Display a user's avatar | Active |
 | `/display` | Display supported user or profile information | Active |
 | `/help` | Browse the current in-bot command registry and exact usage | Active |
-| `/invite` | Show the least-privilege bot invite link | Active |
+| `/invite` | Show the official bot invite link, which requests Administrator permission | Active |
 | `/ping` | Check bot responsiveness | Active |
 | `/report` | Submit a report through configured server or project channels | Active |
 | `/roleinfo` | Display information about a Discord role | Active |
@@ -78,13 +78,16 @@ Music must not be used to access private, paid, subscriber-only, age-restricted,
 | Command | Purpose | Status |
 |---|---|---|
 | `/anime` | Search supported anime information sources | Active |
+| `/download` | Prepare and deliver a preview of supported public media | Active |
 | `/media` | Repair supported social embeds, display supported direct images or GIFs, and prepare supported public media previews | Active |
 | `/pixiv` | Retrieve supported Pixiv information or media | Active |
 | `/reddit` | Retrieve supported Reddit content | Active |
 | `/steam` | Retrieve supported Steam information | Active |
 | `/wikipedia` | Search Wikipedia content | Active |
 
-External-service commands depend on third-party APIs and may be unavailable, restricted, or removed. Users must not provide account passwords, session cookies, access tokens, or URLs to private, paid, restricted, or DRM-protected content.
+External-service commands depend on third-party APIs and may be unavailable, restricted, or removed. The official hosted deployment enables `/download` through `DOWNLOAD_COMMAND_ENABLED`. Users may submit only supported public media they own, have permission to use, or may use under applicable law. They must not provide account passwords, session cookies, access tokens, or URLs to private, paid, restricted, or DRM-protected content.
+
+Downloaded source files used for processing default to a maximum local age of 1,800 seconds. Temporary public R2 objects, when enabled, target a maximum of 86,400 seconds.
 
 Some third-party image hosts can contain mature material even though Shoukaku does not provide dedicated adult-content commands. Users and server administrators must not use `/media` to expose minors to adult content, evade channel restrictions, or violate Discord rules. The Operator may block a host or request without notice where necessary for safety, law, platform policy, or copyright compliance.
 
@@ -109,7 +112,6 @@ The following commands are included in this complete inventory because implement
 
 | Command | Historical purpose | Status |
 |---|---|---|
-| `/download` | Download, convert, or prepare media as a Discord attachment | Disabled |
 | `/snipe` | Display recently deleted messages collected for a server | Disabled |
 | `/nhentai` | Search or retrieve adult-oriented doujin content | Disabled |
 | `/rule34` | Search or retrieve adult-oriented image content | Disabled |
