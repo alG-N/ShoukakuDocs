@@ -1,6 +1,6 @@
 # Copyright and Intellectual Property Policy
 
-**Effective date:** July 24, 2026
+**Effective date:** July 29, 2026
 
 Shoukaku respects copyright, trademarks, privacy, and other intellectual-property rights. This policy explains how complaints concerning the official hosted Service are handled.
 
@@ -60,7 +60,7 @@ The Operator may restrict or terminate users, servers, sources, or integrations 
 
 ## 6. Media Feature Restrictions
 
-The public `/download` command is disabled. Remaining music and media features must not be used for private, paid, restricted, or DRM-protected content, or for redistribution without permission.
+The official hosted deployment enables `/download` for supported public media. Users may request only material they own, have permission to use, or may use under applicable law. `/download` and other music or media features must not be used for private, paid, restricted, or DRM-protected content, or for redistribution without permission.
 
 The Service does not accept user account passwords, cookies, or authentication tokens for media access.
 
