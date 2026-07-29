@@ -1,8 +1,8 @@
 # Chính sách Quyền riêng tư
 
-**Phiên bản:** 2.2  
-**Ngày có hiệu lực:** 24 tháng 7 năm 2026  
-**Cập nhật lần cuối:** 24 tháng 7 năm 2026
+**Phiên bản:** 2.3<br>
+**Ngày có hiệu lực:** 29 tháng 7 năm 2026<br>
+**Cập nhật lần cuối:** 29 tháng 7 năm 2026
 
 **Bản tiếng Anh:** [../EN/PP.md](../EN/PP.md)
 
@@ -26,10 +26,10 @@ Danh tính pháp lý đã được xác minh của Người vận hành có th�
 
 Danh mục đầy đủ tại [COMMANDS.md](COMMANDS.md) bao gồm lệnh đang hoạt động, lệnh bị giới hạn và phần triển khai đã bị vô hiệu hóa.
 
-Dịch vụ chính thức hiện không đăng ký `/nhentai`, `/rule34`, `/download` hoặc `/snipe`.
+Bản triển khai chính thức đăng ký `/download` khi `DOWNLOAD_COMMAND_ENABLED` được bật; cấu hình chính thức hiện tại bật lệnh này. Dịch vụ không đăng ký `/nhentai`, `/rule34` hoặc `/snipe`.
 
 - Không phát sinh thu thập mới đối với tin nhắn đã xóa qua `/snipe` khi cờ thu thập backend vẫn bị tắt.
-- Quy trình `/download` công khai không khả dụng.
+- `/download` chỉ xử lý URL do người dùng chủ động gửi cho yêu cầu đó và chỉ dành cho phương tiện công khai được hỗ trợ mà người dùng sở hữu, được phép sử dụng hoặc được pháp luật áp dụng cho phép sử dụng.
 - Mã nguồn, kiểm thử, lược đồ cơ sở dữ liệu, ảnh chụp cũ hoặc tài liệu tham chiếu không có nghĩa tính năng đang hoạt động.
 
 Nếu một tính năng rủi ro cao được bật lại, Người vận hành phải cập nhật chính sách này và triển khai kiểm soát phù hợp trước khi cung cấp công khai.
@@ -59,7 +59,7 @@ Tính năng cần sự đồng ý, đánh giá chính thức hoặc kiểm soát
 | Dữ liệu nhập vào lệnh và báo cáo | Từ khóa tìm kiếm, URL công khai, nội dung báo cáo, lý do kiểm duyệt | Thực hiện tính năng, hỗ trợ, điều tra lạm dụng và thực thi quy tắc | Chỉ giữ trong thời gian xử lý yêu cầu trừ khi tính năng cần tạo hồ sơ. Báo cáo và hồ sơ lạm dụng được giữ đến khi giải quyết xong và không còn cần thiết vì bảo mật, tranh chấp hoặc pháp luật. |
 | Trạng thái âm nhạc đang hoạt động | Hàng đợi, bài hát được yêu cầu, trạng thái phát, trạng thái phiên thoại | Cung cấp phát âm thanh và chức năng hàng đợi theo yêu cầu | Hàng đợi và trạng thái phát là tạm thời, hết hạn hoặc được xóa khi phiên kết thúc, hàng đợi bị xóa hoặc trạng thái cache hết hạn. |
 | Tùy chọn, mục yêu thích và lịch sử nghe nhạc | ID người dùng Discord; âm lượng, autoplay, nguồn ưu tiên; URL, tiêu đề, tác giả, thời lượng, ảnh thu nhỏ, thời điểm thêm hoặc phát | Cung cấp hành vi âm nhạc cá nhân hóa, mục yêu thích và lịch sử do người dùng yêu cầu | Tùy chọn được giữ đến khi đặt lại, xóa hoặc không còn cần thiết. Mục yêu thích hiện giới hạn 200 mục gần nhất mỗi người dùng và được giữ đến khi xóa, thay thế hoặc xử lý yêu cầu xóa. Lịch sử nghe hiện giới hạn 100 mục gần nhất mỗi người dùng và được giữ đến khi xóa, bị thay thế bởi mục mới hoặc xử lý yêu cầu xóa đã xác minh. |
-| Tệp phương tiện tạm thời và đối tượng công khai | URL công khai được gửi, metadata tác vụ xử lý, tệp được tạo, khóa đối tượng công khai | Cung cấp quy trình `/media` và nhúng đã được phê duyệt theo yêu cầu người dùng | Tệp nguồn tải xuống hiện mặc định có tuổi tối đa 1.800 giây. Đối tượng R2 công khai tạm thời, khi được bật, hiện hướng tới thời gian lưu tối đa 86.400 giây. |
+| Tệp phương tiện tạm thời và đối tượng công khai | URL công khai được gửi, metadata tác vụ xử lý, tệp được tạo, khóa đối tượng công khai | Cung cấp quy trình `/download`, `/media` và nhúng đã được phê duyệt theo yêu cầu người dùng | Tệp nguồn tải xuống hiện mặc định có tuổi cục bộ tối đa 1.800 giây. Đối tượng R2 công khai tạm thời, khi được bật, hiện hướng tới thời gian lưu tối đa 86.400 giây. |
 | Metadata ánh xạ phương tiện ổn định | URL YouTube chuẩn hóa, ID video và định dạng, codec, kích thước nội dung, thời điểm tạo và hết hạn, giá trị kiểm tra toàn vẹn | Tạo định danh phương tiện ổn định, tránh trích xuất lặp lại, kiểm tra kích thước và định dạng, cung cấp preview được hỗ trợ | Ánh xạ Redis hiện mặc định có TTL có thể gia hạn là 604.800 giây và tuổi tối đa tuyệt đối 2.592.000 giây kể từ khi tạo. Thời gian này áp dụng cho metadata ánh xạ, không có nghĩa tệp nguồn tải xuống được giữ 30 ngày. Cache URL trực tiếp từ upstream hiện mặc định 300 giây. |
 | Giới hạn tần suất và tín hiệu bảo mật | Thời gian chờ, bộ đếm yêu cầu, chỉ báo lạm dụng, hồ sơ sự cố | Ngăn spam, gian lận, tấn công và gián đoạn Dịch vụ theo căn cứ bảo mật và pháp lý được phép | Bộ đếm ngắn hạn hết hạn theo cấu hình cache. Hồ sơ sự cố chỉ được giữ trong thời gian hợp lý cần thiết để điều tra, ngăn lạm dụng lặp lại hoặc thực hiện nghĩa vụ pháp lý. |
 | Nhật ký kỹ thuật và chẩn đoán | Tên lệnh và thời điểm, lỗi, stack trace, dữ liệu sức khỏe và hiệu năng | Gỡ lỗi, bảo mật, duy trì tính sẵn sàng và ứng phó sự cố | Nhật ký container cốt lõi dùng tệp quay vòng có giới hạn dung lượng thay vì lưu nối tiếp vô thời hạn. Nhà cung cấp quan sát bên ngoài tùy chọn áp dụng thời gian lưu theo cấu hình tài khoản. Nhật ký chỉ được giữ lâu hơn vì sự cố đang hoạt động hoặc nghĩa vụ pháp lý. |
@@ -79,7 +79,7 @@ Quản trị viên máy chủ chịu trách nhiệm bật và cấu hình tính 
 
 ## 6. Phương tiện và nội dung bên thứ ba
 
-Lệnh `/media` có thể xử lý URL do người dùng chủ động gửi, gồm liên kết mạng xã hội được hỗ trợ, liên kết ảnh hoặc GIF công khai trực tiếp và preview phương tiện công khai được hỗ trợ.
+Lệnh `/download` và `/media` có thể xử lý URL do người dùng chủ động gửi. `/download` chỉ dành cho phương tiện công khai được hỗ trợ mà người dùng sở hữu, được phép sử dụng hoặc được pháp luật áp dụng cho phép sử dụng. `/media` có thể xử lý liên kết mạng xã hội được hỗ trợ, liên kết ảnh hoặc GIF công khai trực tiếp và preview phương tiện công khai được hỗ trợ.
 
 Một số máy chủ ảnh bên thứ ba có thể chứa nội dung người lớn dù Dịch vụ chính thức không cung cấp lệnh chuyên biệt về nội dung người lớn. Dịch vụ không phải hệ thống xác minh độ tuổi. Người dùng và quản trị viên máy chủ phải tuân thủ quy định Discord, giới hạn kênh và pháp luật áp dụng. Người vận hành có thể chặn nguồn hoặc yêu cầu khi cần thiết.
 
