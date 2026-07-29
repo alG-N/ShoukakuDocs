@@ -20,7 +20,7 @@ Trang này cung cấp danh mục công khai về bề mặt lệnh hướng tớ
 | `/avatar` | Hiển thị avatar của người dùng | Hoạt động |
 | `/display` | Hiển thị thông tin người dùng hoặc hồ sơ được hỗ trợ | Hoạt động |
 | `/help` | Duyệt registry lệnh hiện tại và cách dùng chính xác | Hoạt động |
-| `/invite` | Hiển thị liên kết mời bot theo nguyên tắc quyền tối thiểu | Hoạt động |
+| `/invite` | Hiển thị liên kết mời bot chính thức, có yêu cầu quyền Administrator | Hoạt động |
 | `/ping` | Kiểm tra khả năng phản hồi của bot | Hoạt động |
 | `/report` | Gửi báo cáo qua kênh máy chủ hoặc dự án đã cấu hình | Hoạt động |
 | `/roleinfo` | Hiển thị thông tin vai trò Discord | Hoạt động |
@@ -78,13 +78,16 @@ Không được dùng âm nhạc để truy cập nội dung riêng tư, trả p
 | Lệnh | Mục đích | Trạng thái |
 |---|---|---|
 | `/anime` | Tìm thông tin anime từ nguồn được hỗ trợ | Hoạt động |
+| `/download` | Chuẩn bị và gửi preview của phương tiện công khai được hỗ trợ | Hoạt động |
 | `/media` | Sửa embed mạng xã hội, hiển thị ảnh hoặc GIF trực tiếp và chuẩn bị preview phương tiện công khai được hỗ trợ | Hoạt động |
 | `/pixiv` | Lấy thông tin hoặc phương tiện Pixiv được hỗ trợ | Hoạt động |
 | `/reddit` | Lấy nội dung Reddit được hỗ trợ | Hoạt động |
 | `/steam` | Lấy thông tin Steam được hỗ trợ | Hoạt động |
 | `/wikipedia` | Tìm kiếm Wikipedia | Hoạt động |
 
-Các lệnh bên thứ ba phụ thuộc API bên ngoài và có thể bị gián đoạn, giới hạn hoặc gỡ bỏ. Người dùng không được cung cấp mật khẩu tài khoản, cookie phiên, access token hoặc URL tới nội dung riêng tư, trả phí, bị giới hạn hay được bảo vệ bằng DRM.
+Các lệnh bên thứ ba phụ thuộc API bên ngoài và có thể bị gián đoạn, giới hạn hoặc gỡ bỏ. Bản triển khai chính thức bật `/download` qua `DOWNLOAD_COMMAND_ENABLED`. Người dùng chỉ được gửi phương tiện công khai được hỗ trợ mà mình sở hữu, được phép sử dụng hoặc được pháp luật áp dụng cho phép sử dụng. Người dùng không được cung cấp mật khẩu tài khoản, cookie phiên, access token hoặc URL tới nội dung riêng tư, trả phí, bị giới hạn hay được bảo vệ bằng DRM.
+
+Tệp nguồn tải xuống dùng để xử lý mặc định có tuổi cục bộ tối đa 1.800 giây. Đối tượng R2 công khai tạm thời, khi bật, hướng tới tối đa 86.400 giây.
 
 Một số máy chủ ảnh bên thứ ba có thể chứa nội dung người lớn dù Shoukaku không cung cấp lệnh chuyên biệt về nội dung đó. Người dùng và quản trị viên không được dùng `/media` để cho người chưa thành niên tiếp xúc với nội dung người lớn, né giới hạn kênh hoặc vi phạm quy định Discord. Người vận hành có thể chặn nguồn hoặc yêu cầu khi cần vì an toàn, pháp luật, chính sách nền tảng hoặc bản quyền.
 
@@ -109,7 +112,6 @@ Các lệnh sau được giữ trong danh mục đầy đủ vì file triển kh
 
 | Lệnh | Mục đích lịch sử | Trạng thái |
 |---|---|---|
-| `/download` | Tải, chuyển đổi hoặc chuẩn bị phương tiện thành attachment Discord | Vô hiệu hóa |
 | `/snipe` | Hiển thị tin nhắn đã xóa gần đây được thu thập cho máy chủ | Vô hiệu hóa |
 | `/nhentai` | Tìm hoặc lấy nội dung doujin hướng người lớn | Vô hiệu hóa |
 | `/rule34` | Tìm hoặc lấy hình ảnh hướng người lớn | Vô hiệu hóa |
