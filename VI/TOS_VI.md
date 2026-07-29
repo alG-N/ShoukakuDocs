@@ -1,8 +1,8 @@
 # Điều khoản Dịch vụ
 
-**Phiên bản:** 2.2  
-**Ngày có hiệu lực:** 24 tháng 7 năm 2026  
-**Cập nhật lần cuối:** 24 tháng 7 năm 2026
+**Phiên bản:** 2.3<br>
+**Ngày có hiệu lực:** 29 tháng 7 năm 2026<br>
+**Cập nhật lần cuối:** 29 tháng 7 năm 2026
 
 **Bản tiếng Anh:** [../EN/TOS.md](../EN/TOS.md)
 
@@ -69,7 +69,7 @@ Chủ sở hữu và quản trị viên máy chủ chịu trách nhiệm:
 - xử lý khiếu nại và yêu cầu xóa liên quan đến hồ sơ do máy chủ kiểm soát;
 - áp dụng giới hạn kênh phù hợp khi nội dung bên thứ ba có thể mang tính người lớn hoặc nhạy cảm.
 
-Liên kết mời chính thức không yêu cầu quyền Administrator và không nên cấp quyền này chỉ vì thuận tiện.
+Liên kết mời chính thức yêu cầu quyền **Administrator** của Discord. Đây là quyền truy cập rộng. Bạn chỉ được mời Bot vào máy chủ mình sở hữu hoặc được ủy quyền quản trị và phải rà soát quyền được yêu cầu trước khi xác nhận cài đặt.
 
 ## 5. Nội dung và chỉ dẫn của người dùng
 
@@ -83,7 +83,7 @@ Bạn xác nhận mình có quyền và thẩm quyền cần thiết để gửi
 
 Shoukaku có thể tìm kiếm, liên kết, chuyển đổi, truyền hoặc xử lý tạm thời nội dung từ các dịch vụ bên thứ ba đã được phê duyệt.
 
-Lệnh công khai `/download` đã bị vô hiệu hóa. Các tính năng âm nhạc và phương tiện còn lại chỉ dành cho nội dung công khai được hỗ trợ và mục đích hợp pháp. Bạn không được yêu cầu Dịch vụ:
+Bản triển khai chính thức bật `/download` qua `DOWNLOAD_COMMAND_ENABLED`. Các tính năng âm nhạc và phương tiện chỉ dành cho nội dung công khai được hỗ trợ mà bạn sở hữu, được phép sử dụng hoặc được pháp luật áp dụng cho phép sử dụng. Bạn không được yêu cầu Dịch vụ:
 
 - truy cập nội dung riêng tư, trả phí, dành cho thuê bao, giới hạn độ tuổi hoặc giới hạn khu vực;
 - sử dụng thông tin đăng nhập, cookie, token hoặc phiên đã xác thực do bạn hoặc người dùng cuối khác cung cấp;
@@ -95,6 +95,8 @@ Backend có thể dùng khóa API, thông tin xác thực ứng dụng hoặc to
 
 Lệnh `/media` có thể hỗ trợ liên kết mạng xã hội công khai và URL ảnh hoặc GIF trực tiếp. Một số máy chủ bên thứ ba có thể chứa nội dung người lớn. Shoukaku không phải hệ thống xác minh độ tuổi và việc không có lệnh chuyên biệt về nội dung người lớn không bảo đảm mọi URL công khai do người dùng gửi đều phù hợp với mọi kênh hoặc đối tượng.
 
+Tệp nguồn tải xuống dùng để xử lý mặc định có tuổi cục bộ tối đa 1.800 giây. Đối tượng R2 công khai tạm thời, khi bật, hướng tới tối đa 86.400 giây.
+
 Người vận hành không tuyên bố sở hữu nội dung của bên thứ ba và không bảo đảm tính chính xác, hợp pháp, an toàn, sẵn có hoặc khả năng truy cập liên tục của nội dung đó. Người vận hành có thể gỡ một nguồn hoặc tích hợp ngay khi có khiếu nại, thay đổi chính sách hoặc đánh giá rủi ro.
 
 Thông báo bản quyền được xử lý theo [IP_POLICY.md](IP_POLICY.md).
@@ -103,7 +105,7 @@ Thông báo bản quyền được xử lý theo [IP_POLICY.md](IP_POLICY.md).
 
 [Danh mục lệnh đầy đủ](COMMANDS.md) liệt kê phần triển khai đang hoạt động, bị giới hạn và bị vô hiệu hóa để phân biệt hành vi hiện tại với tham chiếu lịch sử trong mã nguồn.
 
-Dịch vụ chính thức hiện không đăng ký `/nhentai`, `/rule34`, `/download` hoặc `/snipe`.
+Dịch vụ chính thức hiện không đăng ký `/nhentai`, `/rule34` hoặc `/snipe`. `/download` được đăng ký khi cờ tính năng triển khai của lệnh được bật và hiện được bật trong bản triển khai chính thức.
 
 Mã nguồn, tham chiếu, kiểm thử, cấu trúc cơ sở dữ liệu, ảnh chụp cũ hoặc thành phần nội bộ không tạo thành cam kết rằng tính năng đang khả dụng. Việc một tệp triển khai còn tồn tại trong kho công khai không kích hoạt lệnh Discord tương ứng.
 
