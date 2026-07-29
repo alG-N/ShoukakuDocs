@@ -2,11 +2,11 @@
 
 ## Làm thế nào để mời Shoukaku?
 
-Dùng liên kết mời chính thức theo nguyên tắc quyền tối thiểu:
+Dùng liên kết mời chính thức:
 
-https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=0&integration_type=0&scope=bot+applications.commands
+https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=8&integration_type=0&scope=bot+applications.commands
 
-Liên kết không chọn trước quyền Discord nào. Quản trị viên chỉ nên cấp quyền cần thiết cho tính năng họ sử dụng.
+Liên kết yêu cầu quyền **Administrator** của Discord. Đây là quyền truy cập rộng. Chỉ mời Shoukaku vào máy chủ bạn sở hữu hoặc được ủy quyền rõ ràng để quản trị, đồng thời rà soát yêu cầu trước khi xác nhận.
 
 ## Làm thế nào để xem các lệnh khả dụng?
 
@@ -27,7 +27,7 @@ Tính năng có thể không khả dụng vì:
 - yêu cầu bị cooldown, rate limit, quy tắc an toàn hoặc giới hạn kích thước;
 - lệnh đã thay đổi trong quá trình phát triển.
 
-Dịch vụ chính thức hiện không đăng ký `/nhentai`, `/rule34`, `/download` hoặc `/snipe`.
+Bản triển khai chính thức bật `/download` qua `DOWNLOAD_COMMAND_ENABLED`. Dịch vụ không đăng ký `/nhentai`, `/rule34` hoặc `/snipe`.
 
 ## Tại sao lệnh cũ đã bị tắt vẫn có thể xuất hiện trong Discord?
 
@@ -78,9 +78,9 @@ Người dùng có thể xóa lịch sử nghe qua giao diện âm nhạc đư�
 
 ## Shoukaku có thể tải phương tiện không?
 
-Lệnh công khai `/download` hiện bị vô hiệu hóa.
+Có. Bản triển khai chính thức bật `/download` cho phương tiện công khai được hỗ trợ mà bạn sở hữu, được phép sử dụng hoặc được pháp luật áp dụng cho phép sử dụng. Tính khả dụng vẫn phụ thuộc cờ tính năng triển khai, hỗ trợ nguồn, giới hạn kích thước tệp và tình trạng dịch vụ upstream.
 
-Lệnh `/media` còn lại có thể sửa embed mạng xã hội, hiển thị ảnh hoặc GIF trực tiếp và chuẩn bị preview phương tiện công khai được hỗ trợ. Không được dùng để truy cập nội dung riêng tư, trả phí, bị giới hạn, giới hạn độ tuổi hoặc được bảo vệ bằng DRM.
+Không được dùng `/download` hoặc `/media` để truy cập nội dung riêng tư, trả phí, bị giới hạn, giới hạn độ tuổi, giới hạn khu vực hoặc được bảo vệ bằng DRM. Không gửi thông tin xác thực tài khoản, cookie, token hoặc liên kết đã xác thực.
 
 ## Thông tin liên quan đến phương tiện có thể tồn tại bao lâu?
 
