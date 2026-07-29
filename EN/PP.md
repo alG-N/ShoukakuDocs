@@ -1,8 +1,8 @@
 # Privacy Policy
 
-**Version:** 2.2  
-**Effective date:** July 24, 2026  
-**Last updated:** July 24, 2026
+**Version:** 2.3<br>
+**Effective date:** July 29, 2026<br>
+**Last updated:** July 29, 2026
 
 **Vietnamese version:** [../VI/PP_VI.md](../VI/PP_VI.md)
 
@@ -26,10 +26,10 @@ The Operator's verified legal identity may be provided where required by applica
 
 The complete command inventory in [COMMANDS.md](COMMANDS.md) includes active, restricted, and disabled implementations.
 
-The official Service currently does not register `/nhentai`, `/rule34`, `/download`, or `/snipe`.
+The official hosted deployment registers `/download` when `DOWNLOAD_COMMAND_ENABLED` is enabled; the current official deployment enables it. The Service does not register `/nhentai`, `/rule34`, or `/snipe`.
 
 - No new `/snipe` deleted-message collection should occur while the backend collection flag remains disabled.
-- The public `/download` workflow is unavailable.
+- `/download` processes only a URL intentionally submitted for that request and is limited to supported public media that the user owns, has permission to use, or may use under applicable law.
 - Historical source code, tests, database schemas, screenshots, or documentation references do not mean those features are active.
 
 If a high-risk feature is re-enabled, the Operator must update this policy and implement appropriate controls before public use.
@@ -59,7 +59,7 @@ A feature that requires consent, a formal assessment, or another compliance cont
 | Command inputs and reports | Search terms, public URLs, report text, moderation reasons | Execute the requested feature, provide support, investigate abuse, and enforce rules | Kept for the request unless the feature requires a record. Reports and abuse records remain until resolved and no longer necessary for security, dispute, or legal purposes. |
 | Active music state | Queue entries, requested tracks, playback state, voice-session state | Provide requested playback and queue functions | Active queue and playback state are temporary and expire or are cleared when the session ends, the queue is cleared, or cache state expires. |
 | Music preferences, favorites, and listening history | Discord user ID; volume and autoplay preferences; preferred source; track URL, title, author, duration, thumbnail, added or played timestamp | Provide personalized music behavior, favorites, and history requested by the user | Preferences remain until reset, deleted, or no longer needed. Favorites are currently limited to the latest 200 entries per user and remain until removed, replaced, or deleted. Listening history is currently limited to the latest 100 entries per user and remains until cleared, replaced by newer entries, or deleted following a verified request. |
-| Temporary media files and public objects | Submitted public URL, processing-job metadata, generated file, public-object key | Provide approved `/media` and embed workflows at the user's request | Downloaded source files currently default to a maximum age of 1,800 seconds. Temporary public R2 objects, when enabled, currently target a maximum retention of 86,400 seconds. |
+| Temporary media files and public objects | Submitted public URL, processing-job metadata, generated file, public-object key | Provide approved `/download`, `/media`, and embed workflows at the user's request | Downloaded source files currently default to a maximum local age of 1,800 seconds. Temporary public R2 objects, when enabled, currently target a maximum retention of 86,400 seconds. |
 | Stable media-mapping metadata | Canonical YouTube source URL, video and format identifiers, codec and content-length metadata, creation and expiry timestamps, integrity values | Create stable media identifiers, avoid repeated extraction, enforce size and representation checks, and deliver supported previews | Redis mappings currently default to a renewable TTL of 604,800 seconds and an absolute maximum lifetime of 2,592,000 seconds from creation. This period applies to mapping metadata, not to retaining the downloaded source file for 30 days. Direct upstream URL cache entries currently default to 300 seconds. |
 | Rate limits and security signals | Cooldowns, request counters, abuse indicators, incident records | Prevent spam, fraud, attacks, and service disruption under permitted security and legal grounds | Short-lived counters expire according to cache configuration. Incident records may be retained only while reasonably necessary to investigate and prevent repeated abuse or meet a legal obligation. |
 | Technical logs and diagnostics | Command name and timestamp, errors, stack traces, health and performance data | Debugging, security, availability, and incident response | Core container logs use bounded rotating files by size rather than indefinite append-only storage. Optional external observability providers apply the retention configured in their account. Logs may be preserved longer only for an active incident or legal obligation. |
@@ -79,7 +79,7 @@ Server administrators are responsible for enabling and configuring server-contro
 
 ## 6. Media and Third-Party Content
 
-The `/media` command may process URLs intentionally submitted by a user, including supported social links, direct public image or GIF links, and supported public media previews.
+The `/download` and `/media` commands may process URLs intentionally submitted by a user. `/download` is limited to supported public media that the user owns, has permission to use, or may use under applicable law. `/media` may handle supported social links, direct public image or GIF links, and supported public media previews.
 
 Some third-party hosts may contain mature material even though the official Service does not provide dedicated adult-content commands. The Service is not an age-verification system. Users and server administrators must follow Discord rules, channel restrictions, and applicable law. The Operator may block a source or request where necessary.
 
