@@ -1,6 +1,6 @@
 # Chính sách Bản quyền và Sở hữu trí tuệ
 
-**Ngày có hiệu lực:** 24 tháng 7 năm 2026
+**Ngày có hiệu lực:** 29 tháng 7 năm 2026
 
 Shoukaku tôn trọng bản quyền, nhãn hiệu, quyền riêng tư và các quyền sở hữu trí tuệ khác. Chính sách này giải thích cách xử lý khiếu nại liên quan đến Dịch vụ được vận hành chính thức.
 
@@ -60,7 +60,7 @@ Người vận hành có thể giới hạn hoặc chấm dứt người dùng, 
 
 ## 6. Giới hạn tính năng phương tiện
 
-Lệnh công khai `/download` bị vô hiệu hóa. Các tính năng âm nhạc và phương tiện còn lại không được dùng cho nội dung riêng tư, trả phí, bị giới hạn hoặc được bảo vệ bằng DRM, hay để phân phối lại khi chưa có phép.
+Bản triển khai chính thức bật `/download` cho phương tiện công khai được hỗ trợ. Người dùng chỉ được yêu cầu tài liệu mình sở hữu, được phép sử dụng hoặc được pháp luật áp dụng cho phép sử dụng. Không được dùng `/download` hay tính năng âm nhạc hoặc phương tiện khác cho nội dung riêng tư, trả phí, bị giới hạn hoặc được bảo vệ bằng DRM, hay để phân phối lại khi chưa có phép.
 
 Dịch vụ không nhận mật khẩu tài khoản, cookie hoặc token xác thực của người dùng để truy cập phương tiện.
 
