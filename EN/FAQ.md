@@ -2,11 +2,11 @@
 
 ## How do I invite Shoukaku?
 
-Use the official least-privilege invite link:
+Use the official invite link:
 
-https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=0&integration_type=0&scope=bot+applications.commands
+https://discord.com/oauth2/authorize?client_id=1472185156809920615&permissions=8&integration_type=0&scope=bot+applications.commands
 
-The link requests no preselected Discord permissions. A server administrator should grant only the permissions required for the features they choose to use.
+The link requests Discord's **Administrator** permission. This is broad access. Invite Shoukaku only to a server you own or are explicitly authorized to administer, and review the request before confirming it.
 
 ## How do I view the available commands?
 
@@ -27,7 +27,7 @@ A feature may be unavailable because:
 - the request triggered a cooldown, rate limit, safety rule, or file-size limit;
 - the command has changed during development.
 
-The official hosted service currently does not register `/nhentai`, `/rule34`, `/download`, or `/snipe`.
+The official hosted deployment enables `/download` through `DOWNLOAD_COMMAND_ENABLED`. It does not register `/nhentai`, `/rule34`, or `/snipe`.
 
 ## Why might an old disabled command still appear in Discord?
 
@@ -78,9 +78,9 @@ Users can clear listening history through the supported music interface. Other a
 
 ## Can Shoukaku download media?
 
-The public `/download` command is currently disabled.
+Yes. The official hosted deployment enables `/download` for supported public media that you own, have permission to use, or may use under applicable law. Availability still depends on the deployment feature flag, source support, file-size limits, and upstream service availability.
 
-The remaining `/media` command can repair supported social embeds, display supported direct image or GIF links, and prepare supported public media previews. It must not be used to access private, paid, restricted, age-restricted, or DRM-protected content.
+`/download` and `/media` must not be used to access private, paid, restricted, age-restricted, region-restricted, or DRM-protected content. Do not submit account credentials, cookies, tokens, or authenticated links.
 
 ## How long can media-related information remain?
 
